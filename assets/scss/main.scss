@@ -1,0 +1,534 @@
+body,html {
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+    background-color: #f3f3f3;
+    color: #222;
+    font-family: 'Lato',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+body *,html * {
+    outline: 0
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+header {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+main {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2
+}
+
+footer {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3
+}
+
+h1 {
+    font-size: 78px;
+    text-transform: uppercase;
+    line-height: 80px;
+    margin: 0 0 10px
+}
+
+p,li {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0
+}
+
+h3 {
+    font-size: 42px;
+    margin: 0 0 31px;
+    line-height: 46px;
+    padding-bottom: 35px;
+    position: relative
+}
+
+//Layout Style
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+.wwf-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+body .wwf-owl > * + * {
+    margin-top: 2rem;
+  }
+  body .wwf-owl-s > * + * {
+    margin-top: 1rem;
+  }
+  
+
+
+.donation-form.wwf-form {
+    z-index: 50;
+    padding: 3rem;
+    min-height: 500px;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.donation-form.wwf-form h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase
+}
+
+.donation-form.wwf-form .wwf-field {
+    position: relative
+}
+
+.donation-form.wwf-form .input,.donation-form.wwf-form input[type=date],.donation-form.wwf-form input[type=email],.donation-form.wwf-form input[type=number],.donation-form.wwf-form input[type=tel],.donation-form.wwf-form input[type=text],.donation-form.wwf-form select,.donation-form.wwf-form textarea {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 0 15px;
+    margin-bottom: 1em;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--wwfWhite);
+    border: 1px solid var(--wwfGreyA7);
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,86%,0)
+}
+
+.donation-form.wwf-form textarea,.donation-form.wwf-form textarea.input {
+    padding: 15px
+}
+
+.donation-form.wwf-form input[type=date]:hover,.donation-form.wwf-form input[type=email]:hover,.donation-form.wwf-form input[type=number]:hover,.donation-form.wwf-form input[type=tel]:hover,.donation-form.wwf-form input[type=text]:hover,.donation-form.wwf-form select:hover,.donation-form.wwf-form textarea:hover {
+    border: 1px solid var(--wwfGreyA7);
+    background-color: var(--wwfWhite)
+}
+
+.donation-form.wwf-form input[type=date]::placeholder,.donation-form.wwf-form input[type=email]::placeholder,.donation-form.wwf-form input[type=number]::placeholder,.donation-form.wwf-form input[type=tel]::placeholder,.donation-form.wwf-form input[type=text]::placeholder,.donation-form.wwf-form select::placeholder,.donation-form.wwf-form textarea::placeholder {
+    color: var(--wwfGreyA7);
+    font-weight: 400
+}
+
+.donation-form.wwf-form .input.focus,.donation-form.wwf-form input[type=date]:focus,.donation-form.wwf-form input[type=date]:focus:hover,.donation-form.wwf-form input[type=email]:focus,.donation-form.wwf-form input[type=email]:focus:hover,.donation-form.wwf-form input[type=number]:focus,.donation-form.wwf-form input[type=number]:focus:hover,.donation-form.wwf-form input[type=tel]:focus,.donation-form.wwf-form input[type=tel]:focus:hover,.donation-form.wwf-form input[type=text]:focus,.donation-form.wwf-form input[type=text]:focus:hover,.donation-form.wwf-form select:focus,.donation-form.wwf-form select:focus:hover,.donation-form.wwf-form textarea:focus,.donation-form.wwf-form textarea:focus:hover {
+    border: 1px solid var(--wwfBlue);
+    box-shadow: unset
+}
+
+.donation-form.wwf-form .input.error,.donation-form.wwf-form .input.focus.error,.donation-form.wwf-form input[type=date].error,.donation-form.wwf-form input[type=date]:focus.error,.donation-form.wwf-form input[type=email].error,.donation-form.wwf-form input[type=email]:focus.error,.donation-form.wwf-form input[type=number].error,.donation-form.wwf-form input[type=number]:focus.error,.donation-form.wwf-form input[type=tel].error,.donation-form.wwf-form input[type=tel]:focus.error,.donation-form.wwf-form input[type=text].error,.donation-form.wwf-form input[type=text]:focus.error,.donation-form.wwf-form select.error,.donation-form.wwf-form select:focus.error,.donation-form.wwf-form textarea.error,.donation-form.wwf-form textarea:focus.error {
+    border: 1px solid var(--wwfRed);
+    box-shadow: unset
+}
+
+.donation-form.wwf-form input:-webkit-autofill,.donation-form.wwf-form input:-webkit-autofill:active,.donation-form.wwf-form input:-webkit-autofill:focus,.donation-form.wwf-form input:-webkit-autofill:hover,.donation-form.wwf-form select:-webkit-autofill,.donation-form.wwf-form select:-webkit-autofill:active,.donation-form.wwf-form select:-webkit-autofill:focus,.donation-form.wwf-form select:-webkit-autofill:hover {
+    box-shadow: inset 0 0 0 30px #fff!important
+}
+
+.donation-form.wwf-form select {
+    padding: 8px 15px;
+    background: initial;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23a7a7a7' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 8px);
+    background-position-y: 50%
+}
+
+@media only screen and (max-width: 64em) {
+    .donation-form.wwf-form {
+            padding:2rem
+    }
+}
+
+.donation-form.wwf-form .wwf-field label {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 0 8px;
+    font-size: 12px;
+    color: var(--wwfGreyA7);
+    background-color: #fff;
+    transition: all .4s;
+    transform: translateY(-18px);
+    pointer-events: none
+}
+
+.donation-form.wwf-form .wwf-field .input.error~label,.donation-form.wwf-form .wwf-field input.error~label,.donation-form.wwf-form .wwf-field select.error~label,.donation-form.wwf-form .wwf-field textarea.error~label {
+    color: var(--wwfRed)
+}
+
+.donation-form.wwf-form .wwf-field .input.empty~label,.donation-form.wwf-form .wwf-field input.empty~label,.donation-form.wwf-form .wwf-field select.empty~label,.donation-form.wwf-form .wwf-field textarea.empty~label {
+    top: 8px;
+    left: 8px;
+    color: var(--wwfGreyA7);
+    font-size: 15px;
+    transform: translateY(0);
+    transform: translateX(0)
+}
+
+.donation-form.wwf-form .wwf-field .input.error.empty~label,.donation-form.wwf-form .wwf-field input.error.empty~label,.donation-form.wwf-form .wwf-field select.error.empty~label,.donation-form.wwf-form .wwf-field textarea.error.empty~label {
+    color: var(--wwfRed)
+}
+
+.donation-form.wwf-form .wwf-field .input.focus~label,.donation-form.wwf-form .wwf-field input:focus~label,.donation-form.wwf-form .wwf-field select:focus~label,.donation-form.wwf-form .wwf-field textarea:focus~label {
+    padding: 0 8px;
+    font-size: 12px;
+    color: var(--wwfBlue);
+    background-color: #fff;
+    transition: all .4s;
+    transform: translateY(-18px)
+}
+
+.donation-form.wwf-form .wwf-field .input.focus.error~label,.donation-form.wwf-form .wwf-field input:focus.error~label,.donation-form.wwf-form .wwf-field select:focus.error~label,.donation-form.wwf-form .wwf-field textarea:focus.error~label {
+    color: var(--wwfRed)
+}
+
+.donation-form.wwf-form .wwf-field.icon {
+    display: flex
+}
+
+.donation-form.wwf-form .wwf-field .icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-family: WWFRegular,sans-serif;
+    font-size: 26px;
+    color: #fff;
+    background-color: var(--wwfBlue);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+.donation-form.wwf-form .wwf-field .icon div {
+    margin-top: -8px
+}
+
+.donation-form.wwf-form .wwf-field.icon input,.donation-form.wwf-form .wwf-field.icon input:focus {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 15px;
+    border-left: 0!important
+}
+
+.donation-form.wwf-form .wwf-field.icon input.empty~label,.donation-form.wwf-form .wwf-field.icon input:focus~label,.donation-form.wwf-form .wwf-field.icon input~label {
+    left: 52px
+}
+
+.donation-form.wwf-form .checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 1em;
+    cursor: pointer
+}
+
+.donation-form.wwf-form .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.donation-form.wwf-form .checkbox .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid var(--wwfBlue)
+}
+
+.donation-form.wwf-form .checkbox input:checked~.checkmark {
+    background-color: var(--wwfBlue)
+}
+
+.donation-form.wwf-form .checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.donation-form.wwf-form .checkbox input:checked~.checkmark:after {
+    display: block
+}
+
+.dollar-handle-selector input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    margin: 0;
+    border: none
+}
+
+.dollar-handle-selector {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 2px
+}
+
+.dollar-handle-selector label {
+    position: relative;
+    flex: 1;
+    height: 80px;
+    text-align: center;
+    border: 2px solid var(--wwfBlue);
+    border-right: none;
+    color: var(--wwfBlue);
+    font-family: WWFRegular,sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--wwfWhite);
+    cursor: pointer
+}
+
+.dollar-handle-selector label:last-child {
+    border-right: 2px solid var(--wwfBlue)
+}
+
+.dollar-handle-selector label .amount {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0s linear
+}
+
+.dollar-handle-selector label .amount span {
+    transition: all 0s linear
+}
+
+.dollar-handle-selector label input:checked+.amount {
+    color: var(--wwfWhite);
+    background-color: var(--wwfBlue)
+}
+
+.dollar-handle-selector label input:checked+.amount:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--wwfBlue);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#custom-amount {
+    margin-bottom: 2rem
+}
+
+.donation-form.wwf-form button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--wwfBlue);
+    color: var(--wwfBlue);
+    font-family: Open sans;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: var(--wwfWhite);
+    cursor: pointer;
+    transition: color .1s linear;
+    transition: background-color .2s linear;
+    overflow: hidden
+}
+
+.donation-form.wwf-form button.plain span {
+    z-index: 10;
+    color: var(--wwfBlue);
+    transition: .5s ease
+}
+
+.donation-form.wwf-form button.plain:focus span,.donation-form.wwf-form button.plain:hover span {
+    color: var(--wwfWhite)
+}
+
+.donation-form.wwf-form button.plain:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(0% - 25px);
+    height: 100%;
+    background-color: var(--wwfBlue);
+    transition: .5s ease
+}
+
+.donation-form.wwf-form button.plain:focus:before,.donation-form.wwf-form button.plain:hover:before {
+    width: 100%
+}
+
+.donation-form.wwf-form button.plain:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(0% - 25px);
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-left: 25px solid var(--wwfBlue);
+    transition: .5s ease;
+    z-index: 9
+}
+
+.donation-form.wwf-form button.plain:focus:after,.donation-form.wwf-form button.plain:hover:after {
+    left: 100%
+}
+
+.donation-form.wwf-form button i {
+    transition: color .1s linear
+}
+
+.donation-form.wwf-form button.discreet {
+    border: none;
+    color: var(--wwfBlue)
+}
+
+.donation-form.wwf-form button.discreet:hover {
+    color: var(--wwfBlue);
+    border: none;
+    background-color: var(--wwfWhite)
+}
+
+.donation-form.wwf-form button .fas {
+    transition: transform .3s ease-out
+}
+
+.donation-form.wwf-form button:hover .fas {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px)
+}
+
+.payment .form-buttons {
+    background-color: unset
+}
+
+.payment .form-buttons button.pay-now {
+    justify-content: center;
+    margin-bottom: 0;
+    height: auto;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: var(--wwfWhite);
+    text-transform: uppercase;
+    background-color: var(--primaryColor)!important
+}
+
+.payment .form-buttons button.pay-now:disabled {
+    cursor: default;
+    color: var(--wwfGreyA7);
+    border-color: var(--wwfGreyA7);
+    background-color: var(--wwfGreyDE)!important
+}
+
+.tab-selector {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 2px
+}
+
+.tab-selector .single-tab {
+    flex: 1;
+    text-align: center;
+    padding: .7rem;
+    border: 2px solid var(--wwfBlue);
+    color: var(--wwfBlue);
+    font-family: WWFRegular,sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--wwfWhite);
+    cursor: pointer
+}
+
+.tab-selector .single-tab.selected {
+    color: var(--wwfWhite);
+    background-color: var(--wwfBlue)
+}
+
+.payment-type-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 4rem
+}
+
+.payment-type-selector button:last-child {
+    margin-bottom: 0
+}
+
+.stepper-container {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 8px;
+    margin-bottom: 2rem
+}
+
+.stepper-container .step {
+    flex: 1;
+    margin: 0 1px;
+    border: 2px solid var(--wwfBlue);
+    border-radius: 2px;
+    background-color: var(--wwfWhite)
+}
+
+.stepper-container .step:first-child {
+    margin-left: 0
+}
+
+.stepper-container .step:last-child {
+    margin-right: 0
+}
+
+.stepper-container .step.selected {
+    background-color: var(--wwfBlue)
+}
