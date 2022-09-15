@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WWF Donation</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 
@@ -42,7 +43,7 @@
         <section class="wwf-section_info">
             <div class="container wwf-col-2">
                 <div>
-                    <div class="wwf-owl-s">
+                    <div class="wwf-owl">
                         <h1>
                             <a id="intro"></a>Build a world where people and nature thrive
                         </h1>
@@ -61,113 +62,501 @@
                             people and planet.
                         </p>
                     </div>
-
-                    <a id="hero-expander-button" class="cta_button orange"
-                        href="http://secure.panda.org/Content/wwfintmaindonate.html"
-                        title="Donate"><span>Donate</span></a>
-
-                    <iframe class="youtube-video"
-                        src="https://www.youtube.com/embed/1Bhmdj2tTtQ?enablejsapi=1&amp;origin=https%3A%2F%2Flp.panda.org"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen="" data-gtm-yt-inspected-11="true" id="912452389"
-                        data-gtm-yt-inspected-10460344_46="true" data-gtm-yt-inspected-16="true"
-                        title="WWF - together possible"></iframe>
                 </div>
                 <div>
-                    <div id="donate-form" class="wwf-form donation-form">
-                        <div class="wwf-loading-container" style="display: none;">
-                            <div class="wwf-loading"><span></span></div>
+                    <form id="donationForm" action="">
+                        <!-- <h1>Donation:</h1> -->
+                        <!-- Circles which indicates the steps of the form: -->
+                        <div class="wwf-nav-indicators">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
                         </div>
-                        <div>
-                            <!---->
-                            <div data-v-ac2ea378="" id="donate-step1" class="donation-selection">
-                                <!---->
-                                <div data-v-ac2ea378="" class="tab-selector">
-                                    <div data-v-ac2ea378="" class="single-tab selected">
-                                        Give once
-                                    </div>
-                                    <div data-v-ac2ea378="" class="single-tab">
-                                        Give monthly
-                                    </div>
-                                </div>
-                                <!---->
-                                <!---->
-                                <div data-v-ac2ea378="" class="dollar-handle-selector"><label data-v-ac2ea378=""
-                                        for="handle-Single-56.00"><input data-v-ac2ea378="" type="radio"
-                                            name="handle-Single" id="handle-Single-56.00" data-vv-as="amount"
-                                            value="[object Object]" aria-required="true" aria-invalid="false"
-                                            data-gtm-vis-polling-id-704149_415="1005">
-                                        <div data-v-ac2ea378="" class="amount"><span data-v-ac2ea378="">$56</span></div>
-                                    </label><label data-v-ac2ea378="" for="handle-Single-103.00"><input
-                                            data-v-ac2ea378="" type="radio" name="handle-Single"
-                                            id="handle-Single-103.00" data-vv-as="amount" value="[object Object]"
-                                            aria-required="true" aria-invalid="false"
-                                            data-gtm-vis-polling-id-704149_415="1006">
-                                        <div data-v-ac2ea378="" class="amount"><span data-v-ac2ea378="">$103</span>
-                                        </div>
-                                    </label><label data-v-ac2ea378="" for="handle-Single-238.00"><input
-                                            data-v-ac2ea378="" type="radio" name="handle-Single"
-                                            id="handle-Single-238.00" data-vv-as="amount" value="[object Object]"
-                                            aria-required="true" aria-invalid="false"
-                                            data-gtm-vis-polling-id-704149_415="1007">
-                                        <div data-v-ac2ea378="" class="amount"><span data-v-ac2ea378="">$238</span>
-                                        </div>
-                                    </label><label data-v-ac2ea378="" for="handle-Single-438.00"><input
-                                            data-v-ac2ea378="" type="radio" name="handle-Single"
-                                            id="handle-Single-438.00" data-vv-as="amount" value="[object Object]"
-                                            aria-required="true" aria-invalid="false"
-                                            data-gtm-vis-polling-id-704149_415="1008">
-                                        <div data-v-ac2ea378="" class="amount"><span data-v-ac2ea378="">$438</span>
-                                        </div>
-                                    </label> <label data-v-ac2ea378="" for="handle-Single-custom"><input
-                                            data-v-ac2ea378="" type="radio" name="handle-Single"
-                                            id="handle-Single-custom" value="custom" aria-required="true"
-                                            aria-invalid="false" data-gtm-vis-polling-id-704149_415="1009"> <span
-                                            data-v-ac2ea378="" class="amount"><span
-                                                data-v-ac2ea378="">$_</span></span></label></div>
-                                <!---->
-                                <div data-v-ac2ea378="" class="message-max-amount" style="display: none;">
-                                    <p data-v-ac2ea378="">
-                                        For donations above $75,000 please contact our Impact Partnerships team,
-                                        so we can be sure your gift benefits the area of conservation you are
-                                        most passionate about.
-                                    </p>
-                                    <p data-v-ac2ea378="">
-                                        Please email
-                                        <a data-v-ac2ea378="" href="mailto:partnerships@wwf.org.au"
-                                            target="_blank">partnerships@wwf.org.au</a>. Thank you so much for your
-                                        kindness!
-                                    </p>
-                                </div>
-                                <div data-v-ac2ea378="" class="dollar-handle-selected"><span data-v-ac2ea378="">could
-                                        protect their habitat by helping to secure 500 hectares of prime koala
-                                        country.</span></div> <span data-v-ac2ea378="" class="wwf-alert">
-                                    <!---->
-                                </span>
-                                <!---->
-                                <!---->
-                                <div data-v-ac2ea378="" class="payment-type-selector"><button data-v-ac2ea378=""
-                                        type="button" class="plain"><span data-v-ac2ea378="">Donate by Credit
-                                            Card</span> <span data-v-ac2ea378=""><i data-v-ac2ea378=""
-                                                class="fas fa-arrow-right"></i></span></button> <button
-                                        data-v-ac2ea378="" type="button" class="plain"><span data-v-ac2ea378="">Donate
-                                            by Paypal</span> <span data-v-ac2ea378=""><i data-v-ac2ea378=""
-                                                class="fas fa-arrow-right"></i></span></button> <button
-                                        data-v-ac2ea378="" type="button" class="plain"><span data-v-ac2ea378="">Donate
-                                            by Direct Debit</span> <span data-v-ac2ea378=""><i data-v-ac2ea378=""
-                                                class="fas fa-arrow-right"></i></span></button></div>
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab donationTab wwf-owl">
+                            <div class="btn-group wwf-donateOption" data-toggle="buttons">
+                                <label class="btn btn-primary active" data-toggle="popover" data-original-title=""
+                                    title="">
+                                    <input type="radio" name="customfields.optionGiveonce" />
+                                    <label for="amount1">Give Once</label>
+                                </label>
+                                <label class="btn btn-primary" data-toggle="popover" data-original-title="" title="">
+                                    <input type="radio" name="customfields.optionMonthly" checked="checked" />
+                                    <label for="amount2">Monthly</label>
+                                </label>
                             </div>
-                            <!---->
-                            <!---->
-                            <!---->
+                            <h4>Pick your currency:</h4>
+                            <div id="currency" class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="AUD" id="AUD" />
+                                    <label for="AUD">AUD</label>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="CAD" id="CAD" />
+                                    <label for="CAD">CAD</label>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="CHF" id="CHF" />
+                                    <label for="CHF">CHF</label>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="EUR" id="EUR" />
+                                    <label for="EUR">EUR</label>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="GBP" id="GBP" />
+                                    <label for="GBP">GBP</label>
+                                </label>
+                                <label class="btn btn-primary active">
+                                    <input type="radio" name="customfields.currency" value="INR" id="INR" />
+                                    <label for="INR">INR</label>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="NZD" id="NZD" />
+                                    <label for="NZD">NZD</label>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="SGD" id="SGD" />
+                                    <label for="SGD">SGD</label>
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="customfields.currency" value="USD" id="USD"
+                                        checked="checked" />
+                                    <label for="USD">USD</label>
+                                </label>
+                            </div>
+                            <h4>Choose the amount:</h4>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary" data-toggle="popover" data-original-title="" title="">
+                                    <input type="radio" name="customfields.amount" id="amount1" value="600" />
+                                    <label for="amount1"><span class="currency">₹</span> 10</label>
+                                </label>
+                                <label class="btn btn-primary" data-toggle="popover" data-original-title="" title="">
+                                    <input type="radio" name="customfields.amount" id="amount2" value="3200"
+                                        checked="checked" />
+                                    <label for="amount2"><span class="currency">$</span> 20</label>
+                                </label>
+                                <label class="btn btn-primary" data-toggle="popover" data-original-title="" title="">
+                                    <input type="radio" name="customfields.amount" id="amount3" value="6500" />
+                                    <label for="amount3"><span class="currency">$</span> 50</label>
+                                </label>
+                                <label class="btn btn-primary" data-toggle="popover" data-original-title="" title="">
+                                    <input type="radio" name="customfields.amount" id="amount4" value="24000" />
+                                    <label for="amount4"><span class="currency">$</span> 100</label>
+                                </label>
+                                <label class="btn btn-primary otherAmount empty" placeholder="Other">
+                                    <input type="radio"  name="customfields.amount" id="amount5"/><input type="number"  name="otherAmount"  />
+                                    <label for="amount5">Other</label>
+                                </label>
+                            </div>
+                            <p class="wwf-des-for-amount">Demo text base on amount</p>
                         </div>
-                    </div>
-                </div>
 
+                        <div class="tab informationTab wwf-owl">
+                            <div class="informationTab__top">
+                                <p class="empty">
+                                    <input type="text" oninput="this.className = ''" />
+                                    <label>First name *</label>
+                                </p>
+                                <p class="empty">
+                                    <input type="text" oninput="this.className = ''" />
+                                    <label>Last name *</label>
+                                </p>
+                                <p class="empty">
+                                    <input type="text" oninput="this.className = ''" />
+                                    <label>Phone</label>
+                                </p>
+                                <p class="empty">
+                                    <input type="text" oninput="this.className = ''" />
+                                    <label>Email</label>
+                                </p>
+                            </div>
+                            <div class="informationTab__mid wwf-owl-s">
+                                <p>
+                                    <input type="checkbox" val="subscribe" />
+                                    <label>Subscribe to WWF Newsletter?</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" val="subscribe" />
+                                    <label>By checking this box, you agree to the Privacy
+                                        Policy.</label>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="empty">
+                                    <select class="form-control required valid" name="customfields.country"
+                                        id="SelectCountry" aria-required="true" aria-invalid="false">
+                                        <option value="" selected="selected">Country *</option>
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AS">American Samoa</option>
+                                        <option value="AD">Andorra</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AI">Anguilla</option>
+                                        <option value="AQ">Antarctica</option>
+                                        <option value="AG">Antigua and Barbuda</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AW">Aruba</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BS">Bahamas</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BY">Belarus</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="BZ">Belize</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BM">Bermuda</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="BA">Bosnia and Herzegovina</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BV">Bouvet Island</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="IO">British Indian Ocean Territory</option>
+                                        <option value="BN">Brunei Darussalam</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodia</option>
+                                        <option value="CM">Cameroon</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="CV">Cape Verde</option>
+                                        <option value="KY">Cayman Islands</option>
+                                        <option value="CF">Central African Republic</option>
+                                        <option value="TD">Chad</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CN">China</option>
+                                        <option value="CX">Christmas Island</option>
+                                        <option value="CC">Cocos (Keeling) Islands</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoros</option>
+                                        <option value="CG">Congo</option>
+                                        <option value="CK">Cook Islands</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="CI">Cote d'Ivoire</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="CU">Cuba</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="CD">Democratic Republic of Congo</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DM">Dominica</option>
+                                        <option value="DO">Dominican Republic</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="SV">El salvador</option>
+                                        <option value="GQ">Equatorial Guinea</option>
+                                        <option value="ER">Eritrea</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="ET">Ethiopia</option>
+                                        <option value="FK">Falkland Islands</option>
+                                        <option value="FO">Faroe Islands</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">France</option>
+                                        <option value="GF">French Guiana</option>
+                                        <option value="PF">French Polynesia</option>
+                                        <option value="TF">French Southern Territories</option>
+                                        <option value="GA">Gabon</option>
+                                        <option value="GM">Gambia</option>
+                                        <option value="GE">Georgia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GI">Gibraltar</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="GL">Greenland</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GP">Guadeloupe</option>
+                                        <option value="GU">Guam</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GN">Guinea</option>
+                                        <option value="GW">Guinea-Bissau</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HM">
+                                            Heard Island and McDonald Islands
+                                        </option>
+                                        <option value="VA">Holy See (Vatican City State)</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HK">Hong Kong</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="IS">Iceland</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="IR">Iran</option>
+                                        <option value="IQ">Iraq</option>
+                                        <option value="IE">Ireland</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="JO">Jordan</option>
+                                        <option value="KZ">Kazakstan</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="KI">Kiribati</option>
+                                        <option value="KW">Kuwait</option>
+                                        <option value="KG">Kyrgystan</option>
+                                        <option value="LA">Lao</option>
+                                        <option value="LV">Latvia</option>
+                                        <option value="LB">Lebanon</option>
+                                        <option value="LS">Lesotho</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LY">Libyan Arab Jamahiriya</option>
+                                        <option value="LI">Liechtenstein</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="MO">Macau</option>
+                                        <option value="MK">Macedonia (FYR)</option>
+                                        <option value="MG">Madagascar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="MV">Maldives</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MH">Marshall Islands</option>
+                                        <option value="MQ">Martinique</option>
+                                        <option value="MR">Mauritania</option>
+                                        <option value="MU">Mauritius</option>
+                                        <option value="YT">Mayotte</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="FM">Micronesia</option>
+                                        <option value="MD">Moldova</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolia</option>
+                                        <option value="ME">Montenegro</option>
+                                        <option value="MS">Montserrat</option>
+                                        <option value="MA">Morocco</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="MM">Myanmar</option>
+                                        <option value="NA">Namibia</option>
+                                        <option value="NR">Nauru</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="AN">Netherlands Antilles</option>
+                                        <option value="NC">New Caledonia</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NU">Niue</option>
+                                        <option value="NF">Norfolk Island</option>
+                                        <option value="KP">North Korea</option>
+                                        <option value="MP">Northern Mariana Islands</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="ON">Oman</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PW">Palau</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papua New Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="PN">Pitcairn</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="RE">Reunion</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="RU">Russian Federation</option>
+                                        <option value="RW">Rwanda</option>
+                                        <option value="SH">Saint Helena</option>
+                                        <option value="KN">Saint Kitts and Nevis</option>
+                                        <option value="LC">Saint Lucia</option>
+                                        <option value="PM">Saint Pierre and Miquelon</option>
+                                        <option value="VC">
+                                            Saint Vincent and the Grenadines
+                                        </option>
+                                        <option value="WS">Samoa</option>
+                                        <option value="SM">San Marino</option>
+                                        <option value="ST">Sao Tome and Principe</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="CS">Serbia</option>
+                                        <option value="SC">Seychelles</option>
+                                        <option value="SL">Sierra Leone</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="LK">Slovakia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="SB">Solomon Islands</option>
+                                        <option value="SO">Somalia</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="GS">South Georgia</option>
+                                        <option value="KR">South Korea</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SD">Sudan</option>
+                                        <option value="SR">Suriname</option>
+                                        <option value="SJ">Svalbard and Jan Mayen Islands</option>
+                                        <option value="SZ">Swaziland</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="SY">Syria</option>
+                                        <option value="TW">Taiwan</option>
+                                        <option value="TJ">Tajikistan</option>
+                                        <option value="TZ">Tanzania</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TL">Timor-Leste</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TK">Tokelau</option>
+                                        <option value="TO">Tonga</option>
+                                        <option value="TT">Trinidad and Tobago</option>
+                                        <option value="TN">Tunisia</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="TM">Turkmenistan</option>
+                                        <option value="TC">Turks and Caicos Islands</option>
+                                        <option value="TV">Tuvalu</option>
+                                        <option value="UG">Uganda</option>
+                                        <option value="UA">Ukraine</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="UM">
+                                            United States Minor Outlying Islands
+                                        </option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="UZ">Uzbekistan</option>
+                                        <option value="VU">Vanuatu</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="VN">Viet Nam</option>
+                                        <option value="VG">Virgin Islands (British)</option>
+                                        <option value="VI">Virgin Islands (U.S.)</option>
+                                        <option value="WF">Wallis and Futuna Islands</option>
+                                        <option value="EH">Western Sahara</option>
+                                        <option value="YE">Yemen</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                    </select>
+                                </p>
+
+                                <div class="wwf-address-wrapper wwf-owl-s">
+                                    <p class="wwf-address empty" id="InputAddress1">
+                                        <input type="text" name="customfields.address1" class="form-control required"
+                                            value="" aria-required="true" />
+                                        <label>Address 1 *</label>
+                                    </p>
+                                    <p class="wwf-address empty" id="InputAddress2">
+                                        <input type="text" name="customfields.address2" class="form-control" value=""
+                                            aria-required="true" />
+                                        <label>Address 2</label>
+                                    </p>
+                                    <div class="wwf-address-area-wrapper">
+                                        <p class="wwf-address empty" id="InputCity">
+                                            <input type="text" name="customfields.city" class="form-control required"
+                                                value="" aria-required="true" />
+                                            <label>City</label>
+                                        </p>
+                                        <p class="wwf-address empty" id="InputState">
+                                            <input type="text" name="customfields.state" class="form-control" value=""
+                                                aria-required="true" />
+                                            <label>State</label>
+                                        </p>
+                                        <p class="wwf-address empty" id="InputState">
+                                            <input type="text" name="customfields.state" class="form-control" value=""
+                                                aria-required="true" />
+                                            <label>Postal code</label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class=""></div>
+                            </div>
+                        </div>
+
+                        <div class="tab paymentTab">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="">
+                                            <button class="btn" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Give by credit card
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="tel" class="form-control" placeholder="Valid card number" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Card owner name" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label><span class="hidden-xs">Card Expiry Date:</span></label>
+                                                    <p class="expirationDate">
+                                                        <input type="tel" class="form-control" placeholder="MM" />
+                                                        <span>/</span>
+                                                        <input type="tel" class="form-control" placeholder="YY" />
+                                                    </p>
+                                                
+                                            </div>
+                                            <div class="form-group">
+                                                <label>CV CODE</label>
+                                                <input type="tel" class="form-control" placeholder="CVC" />
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="">
+                                            <button class="btn collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Give by paypal
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Paypal link
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab thankyouTab">
+                            <img src="/assets/images/check-circle.png" alt="" srcset="">
+                            <h2>Thank You</h2>
+                        </div>
+
+                        <div class="wwf-nav-btn" style="overflow: auto">
+                            <div>
+                                <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                                    Previous
+                                </button> -->
+                                <button type="button" onclick="nextPrev(1)">
+                                    <label id="nextBtn">next</label>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
     <footer class="wwf-footer"></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
