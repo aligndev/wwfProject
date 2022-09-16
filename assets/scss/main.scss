@@ -1,6 +1,14 @@
 @import "originalColor";
 @import "responsive";
 
+@font-face {
+  font-family: "open-sans";
+  src: url("/assets/fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 html {
   padding: 0;
@@ -8,7 +16,7 @@ html {
   height: auto;
   background-color: $wwfWhite;
   color: #222;
-  font-family: "Lato", sans-serif;
+  font-family: open-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -43,9 +51,14 @@ body .wwf-owl-s > * + * {
   }
 }
 @include max(769px) {
-  h1, .h1 { font-size: 2rem; }
-  h3, .h3 { font-size: 1.5rem; }
-
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .wwf-header {
@@ -81,7 +94,7 @@ main {
     p {
       font-size: 32px;
       color: $wwfWhite;
-      font-family: Open sans;
+      font-family: "Open sans";
       @include max(769px) {
         font-size: 24px;
       }
@@ -101,7 +114,7 @@ main {
       img {
         max-width: 100%;
       }
-    } 
+    }
     .wwf-separateLine {
       height: 5px;
       width: 120px;
@@ -126,18 +139,18 @@ main {
         align-items: center;
         @include max(769px) {
           flex-direction: column;
-          img {margin-bottom: 20px;}
+          img {
+            margin-bottom: 20px;
+          }
         }
         .wwf-footer_inforwrapper {
           color: $wwfWhite;
           padding-left: 20px;
         }
       }
-
     }
   }
 }
-
 
 /* Style the form */
 #donationForm {
@@ -166,7 +179,7 @@ main {
   h4 {
     font-size: 20px;
     font-weight: 600;
-    font-family: sans-serif;
+    font-family: open-sans;
   }
   label {
     margin-bottom: 0;
@@ -186,14 +199,14 @@ main {
       }
       &[type="text"],
       &[type="tel"] {
-        font-family: sans-serif;
+        font-family: open-sans;
         box-shadow: none;
         outline: none;
       }
     }
     .btn-group {
       p.btn {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0;
         display: flex;
         justify-content: center;
@@ -201,16 +214,16 @@ main {
         font-weight: 600;
         @include max(769px) {
           font-weight: 600;
-        margin-bottom: 0;
-        border: 2px solid $primaryColor;
+          margin-bottom: 0;
+          border: 2px solid $primaryColor;
         }
         label {
           margin-bottom: 0;
-          font-family: sans-serif;
+          font-family: open-sans;
           font-weight: 600;
           // font-size: 14px;
           @include max(769px) {
-            font-size: 15px;
+            font-size: 16px;
           }
         }
       }
@@ -241,7 +254,7 @@ main {
           border: 2px solid #3e9ffd;
           border-left: 0px;
           border-right: 0px;
-          font-family: sans-serif;
+          font-family: open-sans;
           font-size: 16px;
           font-weight: 600;
         }
@@ -251,7 +264,7 @@ main {
           top: -12px;
           left: 12px;
           padding: 0 8px;
-          font-family: sans-serif;
+          font-family: open-sans;
           font-size: 16px;
           color: $wwfBlack;
           background-color: $wwfWhite;
@@ -269,7 +282,7 @@ main {
             top: 9px;
             left: 12px;
             padding: 0 8px;
-            font-family: sans-serif;
+            font-family: open-sans;
             font-size: 18px;
             color: $wwfBlack;
             background-color: $wwfWhite;
@@ -284,14 +297,13 @@ main {
           }
           &.focus,
           &.active {
-            input[type=radio] {
+            input[type="radio"] {
               display: none;
             }
-            input[type=number] {
-
+            input[type="number"] {
               @include max(769px) {
                 font-size: 15px;
-                font-family: sans-serif;
+                font-family: open-sans;
                 font-weight: 600;
               }
             }
@@ -319,12 +331,12 @@ main {
           top: 14px;
           left: 8px;
           padding: 0 8px;
-          font-size: 14px;
+          font-size: 16px;
           color: $wwfBlack;
           background-color: $wwfWhite;
           transition: all 0.4s;
           pointer-events: none;
-          font-family: sans-serif;
+          font-family: open-sans;
         }
         input[type="text"]:focus ~ label {
           transform: translateY(-22px);
@@ -345,7 +357,7 @@ main {
         background-color: $wwfWhite;
         transition: all 0.4s;
         pointer-events: none;
-        font-family: sans-serif;
+        font-family: open-sans;
       }
     }
   }
@@ -472,7 +484,7 @@ main {
       }
     }
     .wwf-des-for-amount {
-      font-family: sans-serif;
+      font-family: open-sans;
       font-size: 16px;
     }
     #currency {
@@ -480,7 +492,7 @@ main {
       margin-top: 20px;
       @include max(769px) {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
         margin-top: 10px;
         label.btn {
@@ -494,7 +506,7 @@ main {
       margin-top: 20px;
       @include max(769px) {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
         margin-top: 10px;
       }
@@ -512,7 +524,7 @@ main {
         background-color: red;
         color: #fff;
         padding: 5px;
-        font-family: sans-serif;
+        font-family: open-sans;
         font-size: 14px;
         position: absolute;
         top: -20px;
@@ -530,7 +542,7 @@ main {
       p {
         display: flex;
         align-items: center;
-        font-family: sans-serif;
+        font-family: open-sans;
         @include max(769px) {
           display: grid;
           grid-template-columns: 1fr 7fr;
@@ -553,9 +565,9 @@ main {
       }
     }
     input {
-      font-family: sans-serif;
+      font-family: open-sans;
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 500;
       color: $wwfBlack;
     }
     .form-control {
@@ -563,12 +575,12 @@ main {
       box-shadow: none;
       border-radius: 0;
       border: 1px solid $primaryColor;
-      font-family: sans-serif;
-      font-size: 14px;
+      font-family: open-sans;
+      font-size: 16px;
       color: $wwfBlack;
       height: 50px;
-      .optgroup {
-        font-size: 50px;
+      @include max(769px) {
+        font-size: 14px;
       }
     }
     .wwf-address-wrapper {
@@ -668,7 +680,7 @@ main {
       font-size: 72px;
     }
     p {
-      font-family: sans-serif;
+      font-family: open-sans;
     }
     text-align: center;
   }
