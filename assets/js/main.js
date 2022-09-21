@@ -109,13 +109,13 @@ function validateForm() {
       document.getElementById("wwf-phone-alert").innerHTML = "";
       document.getElementById("wwf-phone-alert").style.display = "none";
     }
-    if (!$('#wwf-policy-agreement').is(":checked")) {
+    if (!$("#wwf-policy-agreement").is(":checked")) {
       valid = false;
-      document.querySelector('.wwf-policy-agreement-nofication').style.display = "flex";
+      document.querySelector(".wwf-policy-agreement-nofication").style.display =
+        "flex";
     }
     // let policyAgreement = document.querySelector('#wwf-policy-agreement');
     // policyAgreement
-
   }
 
   //valid = true;
@@ -276,3 +276,17 @@ $(function () {
     }
   });
 });
+
+
+// Dropdown currency
+// let currency = document.querySelector("#currency");
+// if(currency) {
+//   currency.addEventListener("click", () => {
+//     if (currency.classList.contains("active")) {
+//       currency.classList.remove("active");
+//     } else{
+//       currency.classList.add("active");
+//     }
+//   });
+// }
+
