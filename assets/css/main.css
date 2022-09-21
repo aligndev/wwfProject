@@ -40,7 +40,7 @@ body .wwf-owl-s > * + * {
   src: url("/assets/fonts/wwf-webfont.woff");
 }
 .container {
-  max-width: 80%;
+  max-width: 1380px;
   margin: auto;
 }
 @media screen and (max-width: 769px) {
@@ -227,7 +227,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 @media screen and (max-width: 769px) {
   #donationForm .tab .btn-group p.btn {
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 0;
     border: 2px solid #3e9ffd;
   }
@@ -235,7 +235,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .tab .btn-group p.btn label {
   margin-bottom: 0;
   font-family: open-sans;
-  font-weight: 600;
+  font-weight: 800;
 }
 @media screen and (max-width: 769px) {
   #donationForm .tab .btn-group p.btn label {

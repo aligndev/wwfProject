@@ -44,7 +44,7 @@ body .wwf-owl-s > * + * {
 
 //Layout Style
 .container {
-  max-width: 80%;
+  max-width: 1380px;
   margin: auto;
   @include max(769px) {
     max-width: 100%;
@@ -213,14 +213,14 @@ main {
         color: #000;
         font-weight: 600;
         @include max(769px) {
-          font-weight: 600;
+          font-weight: 800;
           margin-bottom: 0;
           border: 2px solid $primaryColor;
         }
         label {
           margin-bottom: 0;
           font-family: open-sans;
-          font-weight: 600;
+          font-weight: 800;
           // font-size: 14px;
           @include max(769px) {
             font-size: 16px;
