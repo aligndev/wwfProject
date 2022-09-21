@@ -143,7 +143,7 @@ $(function () {
   $("input[name='customfields.currency']:radio").change(function () {
     let seled = $("input[type='radio'][name='customfields.currency']:checked");
     seledVal = seled.val();
-    console.log(seled);
+    //console.log(seled);
 
     if (seledVal == "AUD") {
       $("#amount1").next().html("<span class='currency'>AU$</span>15");
@@ -233,7 +233,7 @@ $(function () {
     let amountOption = $("input[name='customfields.amount']:checked");
     amountOptionID = amountOption.attr("id");
     let desbyamount = document.querySelector(".wwf-des-for-amount");
-    console.log(amountOptionID);
+    //console.log(amountOptionID);
     if (amountOptionID == "amount1") {
       desbyamount.innerHTML =
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet in tortor nec sagittis. Etiam rhoncus eleifend quam vitae lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tempor quam lacus, in hendrerit ";

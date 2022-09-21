@@ -16,7 +16,7 @@ html {
   height: auto;
   background-color: $wwfWhite;
   color: #222;
-  font-family: open-sans;
+  font-family: open-sans,'Open Sans',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,7 +33,7 @@ body .wwf-owl > * + * {
   }
 }
 body .wwf-owl-s > * + * {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 @font-face {
@@ -173,13 +173,13 @@ main {
     }
   }
   .wwf-owl-s > * + * {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   /*Style content and layout */
   h4 {
     font-size: 20px;
     font-weight: 600;
-    font-family: open-sans;
+    font-family: open-sans,'Open Sans',sans-serif;
   }
   label {
     margin-bottom: 0;
@@ -199,7 +199,7 @@ main {
       }
       &[type="text"],
       &[type="tel"] {
-        font-family: open-sans;
+        font-family: open-sans,'Open Sans',sans-serif;
         box-shadow: none;
         outline: none;
       }
@@ -207,7 +207,7 @@ main {
     .btn-group {
       p.btn {
         font-size: 18px;
-        padding: 0;
+        padding: 5px 10px;
         display: flex;
         justify-content: center;
         color: #000;
@@ -219,8 +219,9 @@ main {
         }
         label {
           margin-bottom: 0;
-          font-family: open-sans;
+          font-family: open-sans,'Open Sans',sans-serif;
           font-weight: 800;
+          line-height: 1;
           // font-size: 14px;
           @include max(769px) {
             font-size: 16px;
@@ -230,7 +231,7 @@ main {
       .btn {
         position: relative;
         text-align: center;
-        flex: 1;
+        //flex: 1;
         border: 2px solid $primaryColor;
         border-right: none;
         color: $primaryColor;
@@ -254,9 +255,10 @@ main {
           border: 2px solid #3e9ffd;
           border-left: 0px;
           border-right: 0px;
-          font-family: open-sans;
+          font-family: open-sans,'Open Sans',sans-serif;
           font-size: 16px;
           font-weight: 600;
+          outline: 0;
         }
         label {
           display: block;
@@ -264,12 +266,13 @@ main {
           top: -12px;
           left: 12px;
           padding: 0 8px;
-          font-family: open-sans;
+          font-family: open-sans,'Open Sans',sans-serif;
           font-size: 16px;
           color: $wwfBlack;
           background-color: $wwfWhite;
           transition: all 0.4s;
           pointer-events: none;
+          line-height: 1;
           @include max(769px) {
             font-size: 12px;
             left: 5px;
@@ -279,10 +282,10 @@ main {
           label {
             display: block;
             position: absolute;
-            top: 9px;
+            top: 12px;
             left: 12px;
             padding: 0 8px;
-            font-family: open-sans;
+            font-family: open-sans,'Open Sans',sans-serif;
             font-size: 18px;
             color: $wwfBlack;
             background-color: $wwfWhite;
@@ -303,7 +306,7 @@ main {
             input[type="number"] {
               @include max(769px) {
                 font-size: 15px;
-                font-family: open-sans;
+                font-family: open-sans,'Open Sans',sans-serif;
                 font-weight: 600;
               }
             }
@@ -317,10 +320,14 @@ main {
             }
           }
         }
+        &.active {
+          background-color: transparent !important;
+        }
       }
     }
     p {
       position: relative;
+      margin-bottom: 0;
       @include max(769px) {
         margin-bottom: 0;
       }
@@ -336,7 +343,7 @@ main {
           background-color: $wwfWhite;
           transition: all 0.4s;
           pointer-events: none;
-          font-family: open-sans;
+          font-family: open-sans,'Open Sans',sans-serif;
         }
         input[type="text"]:focus ~ label {
           transform: translateY(-22px);
@@ -357,7 +364,7 @@ main {
         background-color: $wwfWhite;
         transition: all 0.4s;
         pointer-events: none;
-        font-family: open-sans;
+        font-family: open-sans,'Open Sans',sans-serif;
       }
     }
   }
@@ -456,11 +463,13 @@ main {
     background-color: $primaryColor;
     border-color: $primaryColor;
     box-shadow: none;
+    outline: 0;
   }
   .btn-primary:not(:disabled):not(.disabled).active:focus,
   .btn-primary:not(:disabled):not(.disabled):active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: none;
+    outline: 0;
   }
 
   //Donation tab style
@@ -484,12 +493,19 @@ main {
       }
     }
     .wwf-des-for-amount {
-      font-family: open-sans;
+      font-family: open-sans,'Open Sans',sans-serif;
       font-size: 16px;
     }
     #currency {
       display: flex;
       margin-top: 20px;
+      @include max(1280px) {
+        flex-wrap: wrap;
+        .btn {
+          border-right: 2px solid $primaryColor;
+          margin: 5px 5px 5px 0;
+        }
+      }
       @include max(769px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -504,6 +520,7 @@ main {
     #amount {
       width: 100%;
       margin-top: 20px;
+      display: flex;
       @include max(769px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -524,7 +541,7 @@ main {
         background-color: red;
         color: #fff;
         padding: 5px;
-        font-family: open-sans;
+        font-family: open-sans,'Open Sans',sans-serif;
         font-size: 14px;
         position: absolute;
         top: -20px;
@@ -542,7 +559,7 @@ main {
       p {
         display: flex;
         align-items: center;
-        font-family: open-sans;
+        font-family: open-sans,'Open Sans',sans-serif;
         @include max(769px) {
           display: grid;
           grid-template-columns: 1fr 7fr;
@@ -565,7 +582,7 @@ main {
       }
     }
     input {
-      font-family: open-sans;
+      font-family: open-sans,'Open Sans',sans-serif;
       font-size: 16px;
       font-weight: 500;
       color: $wwfBlack;
@@ -575,7 +592,7 @@ main {
       box-shadow: none;
       border-radius: 0;
       border: 1px solid $primaryColor;
-      font-family: open-sans;
+      font-family: open-sans,'Open Sans',sans-serif;
       font-size: 16px;
       color: $wwfBlack;
       height: 50px;
@@ -585,7 +602,7 @@ main {
     }
     .wwf-address-wrapper {
       display: none;
-      margin-top: 40px;
+      margin-top: 20px;
       @include max(769px) {
         margin-top: 20px;
       }
@@ -680,7 +697,7 @@ main {
       font-size: 72px;
     }
     p {
-      font-family: open-sans;
+      font-family: open-sans,'Open Sans',sans-serif;
     }
     text-align: center;
   }
