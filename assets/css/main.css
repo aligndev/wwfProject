@@ -104,6 +104,9 @@ main .wwf-section__hero p {
     font-size: 24px;
   }
 }
+main .wwf-section_info {
+  background-color: #efefef;
+}
 main .wwf-section_info .container {
   padding: 100px 15px;
 }
@@ -161,10 +164,8 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 
 /* Style the form */
 #donationForm {
-  background-color: #ffffff;
   margin: 100px auto;
-  padding: 40px;
-  width: 95%;
+  width: 100%;
   max-width: 720px;
   min-width: 300px;
   font-family: WWFRegular;
@@ -180,12 +181,16 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
     padding: 0;
   }
 }
+#donationForm .wwf-donation-wrapper {
+  background-color: #ffffff;
+  padding: 40px;
+}
 #donationForm .wwf-owl > * + * {
   margin-top: 40px;
 }
 @media screen and (max-width: 769px) {
   #donationForm .wwf-owl > * + * {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 #donationForm .wwf-owl-s > * + * {
@@ -207,7 +212,6 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   width: 100%;
   border: 1px solid #3e9ffd;
   border-radius: 0;
-  height: 50px;
 }
 #donationForm .tab input.invalid {
   background-color: #ffdddd;
@@ -218,11 +222,23 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   outline: none;
 }
 #donationForm .tab .btn-group p.btn {
-  font-size: 18px;
-  padding: 5px 10px;
   display: flex;
-  justify-content: center;
+  flex: 1;
+  position: relative;
+  text-align: center;
+  border: 2px solid #3e9ffd;
+  border-right: none;
   color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #fff;
+  cursor: pointer;
+  height: 70px;
+  align-items: center;
+  border-radius: 0;
+  font-size: 30px;
+  padding: 5px 10px;
+  justify-content: center;
   font-weight: 600;
 }
 @media screen and (max-width: 769px) {
@@ -234,45 +250,35 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 #donationForm .tab .btn-group p.btn label {
   margin-bottom: 0;
-  font-family: open-sans, "Open Sans", sans-serif;
+  font-family: "WWFRegular", "WWF";
   font-weight: 800;
   line-height: 1;
 }
 @media screen and (max-width: 769px) {
   #donationForm .tab .btn-group p.btn label {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
-#donationForm .tab .btn-group .btn {
-  position: relative;
-  text-align: center;
-  border: 2px solid #3e9ffd;
-  border-right: none;
-  color: #3e9ffd;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #fff;
-  color: #3e9ffd;
-  cursor: pointer;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  border-radius: 0;
+#donationForm .tab .btn-group p.btn label .currency {
+  font-size: 16px;
 }
-#donationForm .tab .btn-group .btn:last-child {
+#donationForm .tab .btn-group p.btn:last-child {
   border-right: 2px solid #3e9ffd;
 }
 #donationForm .tab .btn-group .otherAmount {
   padding: 0;
 }
 #donationForm .tab .btn-group .otherAmount input {
-  border: 2px solid #3e9ffd;
-  border-left: 0px;
-  border-right: 0px;
-  font-family: open-sans, "Open Sans", sans-serif;
-  font-size: 16px;
+  border: none;
+  font-family: "WWFRegular", "WWF", sans-serif;
+  font-size: 30px;
   font-weight: 600;
   outline: 0;
+}
+@media screen and (max-width: 769px) {
+  #donationForm .tab .btn-group .otherAmount input {
+    font-size: 24px;
+  }
 }
 #donationForm .tab .btn-group .otherAmount label {
   display: block;
@@ -280,7 +286,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   top: -12px;
   left: 12px;
   padding: 0 8px;
-  font-family: open-sans, "Open Sans", sans-serif;
+  font-family: "WWFRegular", "WWF", sans-serif;
   font-size: 16px;
   color: #000;
   background-color: #fff;
@@ -299,9 +305,9 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   position: absolute;
   top: 12px;
   left: 12px;
-  padding: 0 8px;
-  font-family: open-sans, "Open Sans", sans-serif;
-  font-size: 18px;
+  padding: 8px 8px;
+  font-family: "WWFRegular", "WWF", sans-serif;
+  font-size: 24px;
   color: #000;
   background-color: #fff;
   transition: all 0.4s;
@@ -309,7 +315,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 @media screen and (max-width: 769px) {
   #donationForm .tab .btn-group .otherAmount.empty label {
-    font-size: 14px;
+    font-size: 24px;
     left: 7px;
     top: 12px;
   }
@@ -319,19 +325,18 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 @media screen and (max-width: 769px) {
   #donationForm .tab .btn-group .otherAmount.empty.focus input[type=number], #donationForm .tab .btn-group .otherAmount.empty.active input[type=number] {
-    font-size: 15px;
-    font-family: open-sans, "Open Sans", sans-serif;
     font-weight: 600;
   }
 }
 #donationForm .tab .btn-group .otherAmount.empty.focus label, #donationForm .tab .btn-group .otherAmount.empty.active label {
-  transform: translateY(-22px);
+  transform: translateY(-28px);
   font-size: 16px;
 }
 @media screen and (max-width: 769px) {
   #donationForm .tab .btn-group .otherAmount.empty.focus label, #donationForm .tab .btn-group .otherAmount.empty.active label {
-    font-size: 12px;
+    font-size: 14px;
     top: 15px;
+    padding: 4px 10px;
   }
 }
 #donationForm .tab .btn-group .otherAmount.active {
@@ -432,7 +437,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 @media screen and (max-width: 769px) {
   #donationForm .wwf-nav-btn button {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 #donationForm .wwf-nav-btn button::before {
@@ -488,13 +493,13 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   }
 }
 #donationForm .donationTab .wwf-donateOption p.btn label {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   font-family: WWFRegular;
 }
 @media screen and (max-width: 769px) {
   #donationForm .donationTab .wwf-donateOption p.btn label {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 #donationForm .donationTab .wwf-des-for-amount {
@@ -505,25 +510,37 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   display: flex;
   margin-top: 20px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1180px) {
   #donationForm .donationTab #currency {
     flex-wrap: wrap;
-  }
-  #donationForm .donationTab #currency .btn {
-    border-right: 2px solid #3e9ffd;
-    margin: 5px 5px 5px 0;
   }
 }
 @media screen and (max-width: 769px) {
   #donationForm .donationTab #currency {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    margin-top: 10px;
+    grid-gap: 12px;
+    margin-top: 15px;
   }
   #donationForm .donationTab #currency label.btn {
     margin: 0 5px 5px 0;
     border: 2px solid #3e9ffd;
+  }
+}
+#donationForm .donationTab #currency p.btn {
+  font-size: 25px;
+  min-width: 65px;
+}
+@media screen and (max-width: 1180px) {
+  #donationForm .donationTab #currency p.btn {
+    border-right: 2px solid #3e9ffd;
+    margin: 5px 5px 5px 0;
+    flex: 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  #donationForm .donationTab #currency p.btn {
+    margin: 0;
   }
 }
 #donationForm .donationTab #amount {
@@ -531,12 +548,17 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   margin-top: 20px;
   display: flex;
 }
+@media screen and (max-width: 1180px) {
+  #donationForm .donationTab #amount p.btn {
+    flex: auto;
+  }
+}
 @media screen and (max-width: 769px) {
   #donationForm .donationTab #amount {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-top: 10px;
+    grid-gap: 12px;
+    margin-top: 15px;
   }
 }
 #donationForm .informationTab {
@@ -568,15 +590,15 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   display: block;
 }
 #donationForm .informationTab .informationTab__mid p {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-family: open-sans, "Open Sans", sans-serif;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
 }
-@media screen and (max-width: 769px) {
-  #donationForm .informationTab .informationTab__mid p {
-    display: grid;
-    grid-template-columns: 1fr 7fr;
-  }
+#donationForm .informationTab .informationTab__mid p label {
+  width: 85%;
 }
 #donationForm .informationTab .informationTab__mid p input {
   height: 20px;
@@ -591,7 +613,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-size: 12px;
   display: none;
   flex-grow: 1;
-  margin-left: 20px;
+  margin-top: 15px;
 }
 #donationForm .informationTab input {
   font-family: open-sans, "Open Sans", sans-serif;

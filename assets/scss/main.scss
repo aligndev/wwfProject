@@ -16,7 +16,7 @@ html {
   height: auto;
   background-color: $wwfWhite;
   color: #222;
-  font-family: open-sans,'Open Sans',sans-serif;
+  font-family: open-sans, "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -101,6 +101,7 @@ main {
     }
   }
   .wwf-section_info {
+    background-color: #efefef;
     .container {
       padding: 100px 15px;
     }
@@ -154,10 +155,8 @@ main {
 
 /* Style the form */
 #donationForm {
-  background-color: #ffffff;
   margin: 100px auto;
-  padding: 40px;
-  width: 95%;
+  width: 100%;
   max-width: 720px;
   min-width: 300px;
   font-family: WWFRegular;
@@ -166,10 +165,14 @@ main {
     width: 100%;
     padding: 0;
   }
+  .wwf-donation-wrapper {
+    background-color: #ffffff;
+    padding: 40px;
+  }
   .wwf-owl > * + * {
     margin-top: 40px;
     @include max(769px) {
-      margin-top: 20px;
+      margin-top: 30px;
     }
   }
   .wwf-owl-s > * + * {
@@ -179,7 +182,7 @@ main {
   h4 {
     font-size: 20px;
     font-weight: 600;
-    font-family: open-sans,'Open Sans',sans-serif;
+    font-family: open-sans, "Open Sans", sans-serif;
   }
   label {
     margin-bottom: 0;
@@ -193,24 +196,36 @@ main {
       width: 100%;
       border: 1px solid $primaryColor;
       border-radius: 0;
-      height: 50px;
+      // height: 50px;
       &.invalid {
         background-color: #ffdddd;
       }
       &[type="text"],
       &[type="tel"] {
-        font-family: open-sans,'Open Sans',sans-serif;
+        font-family: open-sans, "Open Sans", sans-serif;
         box-shadow: none;
         outline: none;
       }
     }
     .btn-group {
       p.btn {
-        font-size: 18px;
-        padding: 5px 10px;
         display: flex;
+        flex: 1;
+        position: relative;
+        text-align: center;
+        border: 2px solid $primaryColor;
+        border-right: none;
+        color: $wwfBlack;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: $wwfWhite;
+        cursor: pointer;
+        height: 70px;
+        align-items: center;
+        border-radius: 0;
+        font-size: 30px;
+        padding: 5px 10px;
         justify-content: center;
-        color: #000;
         font-weight: 600;
         @include max(769px) {
           font-weight: 800;
@@ -219,31 +234,16 @@ main {
         }
         label {
           margin-bottom: 0;
-          font-family: open-sans,'Open Sans',sans-serif;
+          font-family: "WWFRegular", "WWF";
           font-weight: 800;
           line-height: 1;
-          // font-size: 14px;
           @include max(769px) {
+            font-size: 24px;
+          }
+          .currency {
             font-size: 16px;
           }
         }
-      }
-      .btn {
-        position: relative;
-        text-align: center;
-        //flex: 1;
-        border: 2px solid $primaryColor;
-        border-right: none;
-        color: $primaryColor;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        background-color: $wwfWhite;
-        color: $primaryColor;
-        cursor: pointer;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        border-radius: 0;
         &:last-child {
           border-right: 2px solid $primaryColor;
         }
@@ -251,14 +251,14 @@ main {
       .otherAmount {
         padding: 0;
         input {
-          //border: 0;
-          border: 2px solid #3e9ffd;
-          border-left: 0px;
-          border-right: 0px;
-          font-family: open-sans,'Open Sans',sans-serif;
-          font-size: 16px;
+          border: none;
+          font-family: "WWFRegular", "WWF", sans-serif;
+          font-size: 30px;
           font-weight: 600;
           outline: 0;
+          @include max(769px) {
+            font-size: 24px;
+          }
         }
         label {
           display: block;
@@ -266,7 +266,7 @@ main {
           top: -12px;
           left: 12px;
           padding: 0 8px;
-          font-family: open-sans,'Open Sans',sans-serif;
+          font-family: "WWFRegular", "WWF", sans-serif;
           font-size: 16px;
           color: $wwfBlack;
           background-color: $wwfWhite;
@@ -284,16 +284,15 @@ main {
             position: absolute;
             top: 12px;
             left: 12px;
-            padding: 0 8px;
-            font-family: open-sans,'Open Sans',sans-serif;
-            font-size: 18px;
+            padding: 8px 8px;
+            font-family: "WWFRegular", "WWF", sans-serif;
+            font-size: 24px;
             color: $wwfBlack;
             background-color: $wwfWhite;
             transition: all 0.4s;
-            //transform: translateY(-18px);
             pointer-events: none;
             @include max(769px) {
-              font-size: 14px;
+              font-size: 24px;
               left: 7px;
               top: 12px;
             }
@@ -305,17 +304,16 @@ main {
             }
             input[type="number"] {
               @include max(769px) {
-                font-size: 15px;
-                font-family: open-sans,'Open Sans',sans-serif;
                 font-weight: 600;
               }
             }
             label {
-              transform: translateY(-22px);
+              transform: translateY(-28px);
               font-size: 16px;
               @include max(769px) {
-                font-size: 12px;
+                font-size: 14px;
                 top: 15px;
+                padding: 4px 10px;
               }
             }
           }
@@ -343,7 +341,7 @@ main {
           background-color: $wwfWhite;
           transition: all 0.4s;
           pointer-events: none;
-          font-family: open-sans,'Open Sans',sans-serif;
+          font-family: open-sans, "Open Sans", sans-serif;
         }
         input[type="text"]:focus ~ label {
           transform: translateY(-22px);
@@ -364,7 +362,7 @@ main {
         background-color: $wwfWhite;
         transition: all 0.4s;
         pointer-events: none;
-        font-family: open-sans,'Open Sans',sans-serif;
+        font-family: open-sans, "Open Sans", sans-serif;
       }
     }
   }
@@ -423,7 +421,7 @@ main {
       outline: none;
       font-size: 36px;
       @include max(769px) {
-        font-size: 24px;
+        font-size: 30px;
       }
       &::before {
         content: "";
@@ -483,37 +481,45 @@ main {
           height: 70px;
         }
         label {
-          font-size: 36px;
+          font-size: 40px;
           font-weight: 700;
           font-family: WWFRegular;
           @include max(769px) {
-            font-size: 24px;
+            font-size: 30px;
           }
         }
       }
     }
     .wwf-des-for-amount {
-      font-family: open-sans,'Open Sans',sans-serif;
+      font-family: open-sans, "Open Sans", sans-serif;
       font-size: 16px;
     }
     #currency {
       display: flex;
       margin-top: 20px;
-      @include max(1280px) {
+      @include max(1180px) {
         flex-wrap: wrap;
-        .btn {
-          border-right: 2px solid $primaryColor;
-          margin: 5px 5px 5px 0;
-        }
       }
       @include max(769px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-        margin-top: 10px;
+        grid-gap: 12px;
+        margin-top: 15px;
         label.btn {
           margin: 0 5px 5px 0;
           border: 2px solid #3e9ffd;
+        }
+      }
+      p.btn {
+        font-size: 25px;
+        min-width: 65px;
+        @include max(1180px) {
+          border-right: 2px solid $primaryColor;
+          margin: 5px 5px 5px 0;
+          flex: 0;
+        }
+        @include max(769px) { 
+          margin: 0;
         }
       }
     }
@@ -521,11 +527,16 @@ main {
       width: 100%;
       margin-top: 20px;
       display: flex;
+      p.btn {
+        @include max(1180px) {
+          flex: auto;
+        }
+      }
       @include max(769px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        margin-top: 10px;
+        grid-gap: 12px;
+        margin-top: 15px;
       }
     }
   }
@@ -541,7 +552,7 @@ main {
         background-color: red;
         color: #fff;
         padding: 5px;
-        font-family: open-sans,'Open Sans',sans-serif;
+        font-family: open-sans, "Open Sans", sans-serif;
         font-size: 14px;
         position: absolute;
         top: -20px;
@@ -557,12 +568,14 @@ main {
     }
     .informationTab__mid {
       p {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        font-family: open-sans,'Open Sans',sans-serif;
-        @include max(769px) {
-          display: grid;
-          grid-template-columns: 1fr 7fr;
+        font-family: open-sans, "Open Sans", sans-serif;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        label {
+          width: 85%;
         }
         input {
           height: 20px;
@@ -578,11 +591,12 @@ main {
         font-size: 12px;
         display: none;
         flex-grow: 1;
-        margin-left: 20px;
+        margin-top: 15px;
+        // margin-left: 20px;
       }
     }
     input {
-      font-family: open-sans,'Open Sans',sans-serif;
+      font-family: open-sans, "Open Sans", sans-serif;
       font-size: 16px;
       font-weight: 500;
       color: $wwfBlack;
@@ -592,7 +606,7 @@ main {
       box-shadow: none;
       border-radius: 0;
       border: 1px solid $primaryColor;
-      font-family: open-sans,'Open Sans',sans-serif;
+      font-family: open-sans, "Open Sans", sans-serif;
       font-size: 16px;
       color: $wwfBlack;
       height: 50px;
@@ -697,7 +711,7 @@ main {
       font-size: 72px;
     }
     p {
-      font-family: open-sans,'Open Sans',sans-serif;
+      font-family: open-sans, "Open Sans", sans-serif;
     }
     text-align: center;
   }
