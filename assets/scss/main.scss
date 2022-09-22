@@ -516,10 +516,11 @@ main {
         @include max(1180px) {
           border-right: 2px solid $primaryColor;
           margin: 5px 5px 5px 0;
-          //flex: 0;
         }
         @include max(769px) { 
           margin: 0;
+          padding: 0;
+          min-width: auto;
         }
       }
     }
@@ -539,7 +540,12 @@ main {
           margin: 5px 5px 5px 0;
         }
         @include max(769px) {
-          margin: 0;;
+          margin: 0;
+        }
+        &.otherAmount {
+          @include max(769px) {
+            grid-column: 2/4;
+          }
         }
       }
       @include max(769px) {

@@ -540,6 +540,8 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 @media screen and (max-width: 769px) {
   #donationForm .donationTab #currency p.btn {
     margin: 0;
+    padding: 0;
+    min-width: auto;
   }
 }
 #donationForm .donationTab #amount {
@@ -566,6 +568,11 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 @media screen and (max-width: 769px) {
   #donationForm .donationTab #amount p.btn {
     margin: 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  #donationForm .donationTab #amount p.btn.otherAmount {
+    grid-column: 2/4;
   }
 }
 @media screen and (max-width: 769px) {
