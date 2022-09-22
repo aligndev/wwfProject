@@ -24,7 +24,7 @@ html * {
 body .wwf-owl > * + * {
   margin-top: 40px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   body .wwf-owl > * + * {
     margin-top: 20px;
   }
@@ -43,13 +43,13 @@ body .wwf-owl-s > * + * {
   max-width: 1380px;
   margin: auto;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 100%;
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   h1,
 .h1 {
     font-size: 2rem;
@@ -79,7 +79,7 @@ main .wwf-section__hero .container {
   flex-direction: column;
   padding-bottom: 50px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   main .wwf-section__hero .container {
     align-items: baseline;
   }
@@ -89,7 +89,7 @@ main .wwf-section__hero h1 {
   font-size: 96px;
   color: #fff;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   main .wwf-section__hero h1 {
     font-size: 48px;
   }
@@ -99,7 +99,7 @@ main .wwf-section__hero p {
   color: #fff;
   font-family: "Open sans";
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   main .wwf-section__hero p {
     font-size: 24px;
   }
@@ -115,7 +115,7 @@ main .wwf-section_info .wwf-col-2 {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   main .wwf-section_info .wwf-col-2 {
     display: block;
   }
@@ -138,7 +138,7 @@ main .wwf-footer .container {
   align-items: flex-end;
   padding: 25px 15px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   main .wwf-footer .container {
     flex-direction: column;
     align-items: center;
@@ -149,7 +149,7 @@ main .wwf-footer .container .wwf-footer__leftContent {
   align-items: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   main .wwf-footer .container .wwf-footer__leftContent {
     flex-direction: column;
   }
@@ -175,7 +175,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   /* Indicator style */
   /* Navigation style */
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm {
     width: 100%;
     padding: 0;
@@ -188,7 +188,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .wwf-owl > * + * {
   margin-top: 40px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .wwf-owl > * + * {
     margin-top: 30px;
   }
@@ -241,7 +241,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   justify-content: center;
   font-weight: 600;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab .btn-group p.btn {
     font-weight: 800;
     margin-bottom: 0;
@@ -254,7 +254,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-weight: 800;
   line-height: 1;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab .btn-group p.btn label {
     font-size: 24px;
   }
@@ -275,7 +275,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-weight: 600;
   outline: 0;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab .btn-group .otherAmount input {
     font-size: 24px;
   }
@@ -294,7 +294,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   pointer-events: none;
   line-height: 1;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab .btn-group .otherAmount label {
     font-size: 12px;
     left: 5px;
@@ -313,7 +313,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   transition: all 0.4s;
   pointer-events: none;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab .btn-group .otherAmount.empty label {
     font-size: 24px;
     left: 7px;
@@ -323,7 +323,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .tab .btn-group .otherAmount.empty.focus input[type=radio], #donationForm .tab .btn-group .otherAmount.empty.active input[type=radio] {
   display: none;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab .btn-group .otherAmount.empty.focus input[type=number], #donationForm .tab .btn-group .otherAmount.empty.active input[type=number] {
     font-weight: 600;
   }
@@ -332,7 +332,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   transform: translateY(-28px);
   font-size: 16px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab .btn-group .otherAmount.empty.focus label, #donationForm .tab .btn-group .otherAmount.empty.active label {
     font-size: 14px;
     top: 15px;
@@ -346,7 +346,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   position: relative;
   margin-bottom: 0;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .tab p {
     margin-bottom: 0;
   }
@@ -435,7 +435,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   outline: none;
   font-size: 36px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .wwf-nav-btn button {
     font-size: 30px;
   }
@@ -487,7 +487,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   height: 90px;
   width: 50%;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .donationTab .wwf-donateOption p.btn {
     height: 70px;
   }
@@ -497,7 +497,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-weight: 700;
   font-family: WWFRegular;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .donationTab .wwf-donateOption p.btn label {
     font-size: 30px;
   }
@@ -515,7 +515,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .donationTab #currency {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -537,7 +537,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
     margin: 5px 5px 5px 0;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .donationTab #currency p.btn {
     margin: 0;
     padding: 0;
@@ -565,17 +565,17 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
     margin: 5px 5px 5px 0;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .donationTab #amount p.btn {
     margin: 0;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .donationTab #amount p.btn.otherAmount {
     grid-column: 2/4;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .donationTab #amount {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -591,6 +591,11 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  #donationForm .informationTab .informationTab__top {
+    grid-template-columns: 1fr;
+  }
+}
 #donationForm .informationTab .informationTab__top .wwf-alert {
   display: none;
   background-color: red;
@@ -602,7 +607,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   top: -20px;
   left: 0;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .informationTab .informationTab__top .wwf-alert {
     font-size: 11px;
     padding: 3px;
@@ -653,7 +658,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   color: #000;
   height: 50px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .informationTab .form-control {
     font-size: 14px;
   }
@@ -662,7 +667,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   display: none;
   margin-top: 20px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .informationTab .wwf-address-wrapper {
     margin-top: 20px;
   }
@@ -672,7 +677,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   grid-template-columns: 2fr 1fr 1fr;
   grid-gap: 10px;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #donationForm .informationTab .wwf-address-wrapper .wwf-address-area-wrapper {
     grid-template-columns: 1fr 1fr;
   }

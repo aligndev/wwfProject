@@ -28,7 +28,7 @@ html * {
 
 body .wwf-owl > * + * {
   margin-top: 40px;
-  @include max(769px) {
+  @include max(768px) {
     margin-top: 20px;
   }
 }
@@ -46,11 +46,11 @@ body .wwf-owl-s > * + * {
 .container {
   max-width: 1380px;
   margin: auto;
-  @include max(769px) {
+  @include max(768px) {
     max-width: 100%;
   }
 }
-@include max(769px) {
+@include max(768px) {
   h1,
   .h1 {
     font-size: 2rem;
@@ -79,7 +79,7 @@ main {
       height: 100%;
       flex-direction: column;
       padding-bottom: 50px;
-      @include max(769px) {
+      @include max(768px) {
         align-items: baseline;
       }
     }
@@ -87,7 +87,7 @@ main {
       font-family: WWFRegular;
       font-size: 96px;
       color: $wwfWhite;
-      @include max(769px) {
+      @include max(768px) {
         font-size: 48px;
       }
     }
@@ -95,7 +95,7 @@ main {
       font-size: 32px;
       color: $wwfWhite;
       font-family: "Open sans";
-      @include max(769px) {
+      @include max(768px) {
         font-size: 24px;
       }
     }
@@ -109,7 +109,7 @@ main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
-      @include max(769px) {
+      @include max(768px) {
         display: block;
       }
       img {
@@ -130,7 +130,7 @@ main {
       justify-content: space-between;
       align-items: flex-end;
       padding: 25px 15px;
-      @include max(769px) {
+      @include max(768px) {
         flex-direction: column;
         align-items: center;
       }
@@ -138,7 +138,7 @@ main {
         display: flex;
         align-items: flex-end;
         align-items: center;
-        @include max(769px) {
+        @include max(768px) {
           flex-direction: column;
           img {
             margin-bottom: 20px;
@@ -161,7 +161,7 @@ main {
   min-width: 300px;
   font-family: WWFRegular;
   //max-height: 900px;
-  @include max(769px) {
+  @include max(768px) {
     width: 100%;
     padding: 0;
   }
@@ -171,7 +171,7 @@ main {
   }
   .wwf-owl > * + * {
     margin-top: 40px;
-    @include max(769px) {
+    @include max(768px) {
       margin-top: 30px;
     }
   }
@@ -227,7 +227,7 @@ main {
         padding: 5px 10px;
         justify-content: center;
         font-weight: 600;
-        @include max(769px) {
+        @include max(768px) {
           font-weight: 800;
           margin-bottom: 0;
           border: 2px solid $primaryColor;
@@ -237,7 +237,7 @@ main {
           font-family: "WWFRegular", "WWF";
           font-weight: 800;
           line-height: 1;
-          @include max(769px) {
+          @include max(768px) {
             font-size: 24px;
           }
           .currency {
@@ -256,7 +256,7 @@ main {
           font-size: 30px;
           font-weight: 600;
           outline: 0;
-          @include max(769px) {
+          @include max(768px) {
             font-size: 24px;
           }
         }
@@ -273,7 +273,7 @@ main {
           transition: all 0.4s;
           pointer-events: none;
           line-height: 1;
-          @include max(769px) {
+          @include max(768px) {
             font-size: 12px;
             left: 5px;
           }
@@ -291,7 +291,7 @@ main {
             background-color: $wwfWhite;
             transition: all 0.4s;
             pointer-events: none;
-            @include max(769px) {
+            @include max(768px) {
               font-size: 24px;
               left: 7px;
               top: 12px;
@@ -303,14 +303,14 @@ main {
               display: none;
             }
             input[type="number"] {
-              @include max(769px) {
+              @include max(768px) {
                 font-weight: 600;
               }
             }
             label {
               transform: translateY(-28px);
               font-size: 16px;
-              @include max(769px) {
+              @include max(768px) {
                 font-size: 14px;
                 top: 15px;
                 padding: 4px 10px;
@@ -326,7 +326,7 @@ main {
     p {
       position: relative;
       margin-bottom: 0;
-      @include max(769px) {
+      @include max(768px) {
         margin-bottom: 0;
       }
       &.empty {
@@ -420,7 +420,7 @@ main {
       overflow: hidden;
       outline: none;
       font-size: 36px;
-      @include max(769px) {
+      @include max(768px) {
         font-size: 30px;
       }
       &::before {
@@ -477,14 +477,14 @@ main {
       p.btn {
         height: 90px;
         width: 50%;
-        @include max(769px) {
+        @include max(768px) {
           height: 70px;
         }
         label {
           font-size: 40px;
           font-weight: 700;
           font-family: WWFRegular;
-          @include max(769px) {
+          @include max(768px) {
             font-size: 30px;
           }
         }
@@ -500,7 +500,7 @@ main {
       @include max(1180px) {
         flex-wrap: wrap;
       }
-      @include max(769px) {
+      @include max(768px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 12px;
@@ -517,7 +517,7 @@ main {
           border-right: 2px solid $primaryColor;
           margin: 5px 5px 5px 0;
         }
-        @include max(769px) { 
+        @include max(768px) { 
           margin: 0;
           padding: 0;
           min-width: auto;
@@ -539,16 +539,16 @@ main {
           border-right: 2px solid $primaryColor;
           margin: 5px 5px 5px 0;
         }
-        @include max(769px) {
+        @include max(768px) {
           margin: 0;
         }
         &.otherAmount {
-          @include max(769px) {
+          @include max(768px) {
             grid-column: 2/4;
           }
         }
       }
-      @include max(769px) {
+      @include max(768px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 12px;
@@ -563,6 +563,9 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
+      @include max(768px) {
+        grid-template-columns: 1fr;
+      }
       .wwf-alert {
         display: none;
         background-color: red;
@@ -573,7 +576,7 @@ main {
         position: absolute;
         top: -20px;
         left: 0;
-        @include max(769px) {
+        @include max(768px) {
           font-size: 11px;
           padding: 3px;
         }
@@ -626,21 +629,21 @@ main {
       font-size: 16px;
       color: $wwfBlack;
       height: 50px;
-      @include max(769px) {
+      @include max(768px) {
         font-size: 14px;
       }
     }
     .wwf-address-wrapper {
       display: none;
       margin-top: 20px;
-      @include max(769px) {
+      @include max(768px) {
         margin-top: 20px;
       }
       .wwf-address-area-wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         grid-gap: 10px;
-        @include max(769px) {
+        @include max(768px) {
           grid-template-columns: 1fr 1fr;
         }
       }
