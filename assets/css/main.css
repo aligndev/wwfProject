@@ -535,7 +535,6 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   #donationForm .donationTab #currency p.btn {
     border-right: 2px solid #3e9ffd;
     margin: 5px 5px 5px 0;
-    flex: 0;
   }
 }
 @media screen and (max-width: 769px) {
@@ -548,9 +547,25 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   margin-top: 20px;
   display: flex;
 }
+@media screen and (max-width: 1080px) {
+  #donationForm .donationTab #amount {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1180px) {
   #donationForm .donationTab #amount p.btn {
     flex: auto;
+  }
+}
+@media screen and (max-width: 1080px) {
+  #donationForm .donationTab #amount p.btn {
+    border-right: 2px solid #3e9ffd;
+    margin: 5px 5px 5px 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  #donationForm .donationTab #amount p.btn {
+    margin: 0;
   }
 }
 @media screen and (max-width: 769px) {

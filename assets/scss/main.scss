@@ -516,7 +516,7 @@ main {
         @include max(1180px) {
           border-right: 2px solid $primaryColor;
           margin: 5px 5px 5px 0;
-          flex: 0;
+          //flex: 0;
         }
         @include max(769px) { 
           margin: 0;
@@ -527,9 +527,19 @@ main {
       width: 100%;
       margin-top: 20px;
       display: flex;
+      @include max(1080px) {
+        flex-wrap: wrap;
+      }
       p.btn {
         @include max(1180px) {
           flex: auto;
+        }
+        @include max(1080px) {
+          border-right: 2px solid #3e9ffd;
+          margin: 5px 5px 5px 0;
+        }
+        @include max(769px) {
+          margin: 0;;
         }
       }
       @include max(769px) {
@@ -630,6 +640,7 @@ main {
       }
     }
   }
+  //Payment Tab style
   .paymentTab {
     .card {
       border: 0;
@@ -706,6 +717,7 @@ main {
       }
     }
   }
+  //Thank You tab
   .thankyouTab {
     h2 {
       font-size: 72px;
