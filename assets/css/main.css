@@ -126,7 +126,7 @@ main .wwf-section_info .wwf-col-2 img {
 main .wwf-section_info .wwf-separateLine {
   height: 5px;
   width: 120px;
-  background-color: #3e9ffd;
+  background-color: #C83131;
   display: block;
 }
 main .wwf-footer {
@@ -210,7 +210,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .tab input {
   padding: 10px;
   width: 100%;
-  border: 1px solid #3e9ffd;
+  border: 1px solid #C83131;
   border-radius: 0;
 }
 #donationForm .tab input.invalid {
@@ -226,7 +226,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   flex: 1;
   position: relative;
   text-align: center;
-  border: 2px solid #3e9ffd;
+  border: 2px solid #C83131;
   border-right: none;
   color: #000;
   text-transform: uppercase;
@@ -245,7 +245,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   #donationForm .tab .btn-group p.btn {
     font-weight: 800;
     margin-bottom: 0;
-    border: 2px solid #3e9ffd;
+    border: 2px solid #C83131;
   }
 }
 #donationForm .tab .btn-group p.btn label {
@@ -263,7 +263,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-size: 16px;
 }
 #donationForm .tab .btn-group p.btn:last-child {
-  border-right: 2px solid #3e9ffd;
+  border-right: 2px solid #C83131;
 }
 #donationForm .tab .btn-group .otherAmount {
   padding: 0;
@@ -369,7 +369,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-size: 12px;
 }
 #donationForm .tab p input[type=text]:focus {
-  border: 1px solid #3e9ffd;
+  border: 1px solid #C83131;
 }
 #donationForm .tab p input[type=text] ~ label {
   display: block;
@@ -402,11 +402,11 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   /* Mark the steps that are finished and valid: */
 }
 #donationForm .wwf-nav-indicators .step.active {
-  background-color: #3e9ffd;
+  background-color: #C83131;
   opacity: 0.5;
 }
 #donationForm .wwf-nav-indicators .step.finish {
-  background-color: #3e9ffd;
+  background-color: #C83131;
   opacity: 1;
 }
 #donationForm .wwf-nav-indicators .step:last-child {
@@ -422,12 +422,12 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
-  border: 2px solid #3e9ffd;
+  border: 2px solid #C83131;
   color: #fff;
   font-weight: 500;
   text-align: left;
   text-transform: uppercase;
-  background-color: #3e9ffd;
+  background-color: #C83131;
   cursor: pointer;
   transition: color 0.1s linear;
   transition: background-color 0.2s linear;
@@ -447,11 +447,11 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   left: 0;
   width: calc(0% - 25px);
   height: 100%;
-  background-color: #3e9ffd;
+  background-color: #C83131;
   transition: 0.5s ease;
 }
 #donationForm .wwf-nav-btn button:hover span {
-  color: #3e9ffd;
+  color: #C83131;
   z-index: 1;
 }
 #donationForm .wwf-nav-btn button:hover::before {
@@ -469,8 +469,8 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .btn-primary:not(:disabled):not(.disabled):active,
 #donationForm .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #3e9ffd;
-  border-color: #3e9ffd;
+  background-color: #C83131;
+  border-color: #C83131;
   box-shadow: none;
   outline: 0;
 }
@@ -524,7 +524,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   }
   #donationForm .donationTab #currency label.btn {
     margin: 0 5px 5px 0;
-    border: 2px solid #3e9ffd;
+    border: 2px solid #C83131;
   }
 }
 #donationForm .donationTab #currency p.btn {
@@ -533,7 +533,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 @media screen and (max-width: 1180px) {
   #donationForm .donationTab #currency p.btn {
-    border-right: 2px solid #3e9ffd;
+    border-right: 2px solid #C83131;
     margin: 5px 5px 5px 0;
   }
 }
@@ -561,7 +561,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 @media screen and (max-width: 1080px) {
   #donationForm .donationTab #amount p.btn {
-    border-right: 2px solid #3e9ffd;
+    border-right: 2px solid #C83131;
     margin: 5px 5px 5px 0;
   }
 }
@@ -626,7 +626,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   height: 20px;
   width: 20px;
   margin-right: 10px;
-  border: 1px solid #3e9ffd;
+  border: 1px solid #C83131;
 }
 #donationForm .informationTab .informationTab__mid .wwf-policy-agreement-nofication {
   color: #fff;
@@ -647,7 +647,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   outline: none;
   box-shadow: none;
   border-radius: 0;
-  border: 1px solid #3e9ffd;
+  border: 1px solid #C83131;
   font-family: open-sans, "Open Sans", sans-serif;
   font-size: 16px;
   color: #000;

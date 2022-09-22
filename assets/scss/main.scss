@@ -1,4 +1,4 @@
-@import "originalColor";
+@import "redColor";
 @import "responsive";
 
 @font-face {
@@ -507,7 +507,7 @@ main {
         margin-top: 15px;
         label.btn {
           margin: 0 5px 5px 0;
-          border: 2px solid #3e9ffd;
+          border: 2px solid $primaryColor;
         }
       }
       p.btn {
@@ -536,7 +536,7 @@ main {
           flex: auto;
         }
         @include max(1080px) {
-          border-right: 2px solid #3e9ffd;
+          border-right: 2px solid $primaryColor;
           margin: 5px 5px 5px 0;
         }
         @include max(769px) {
@@ -597,7 +597,7 @@ main {
           height: 20px;
           width: 20px;
           margin-right: 10px;
-          border: 1px solid #3e9ffd;
+          border: 1px solid $primaryColor;
         }
       }
       .wwf-policy-agreement-nofication {
@@ -742,18 +742,30 @@ main {
 
 // #donationForm {
 //   .donationTab {
-//     #currency {
-//       flex-direction: column;
-//       p.btn {
-//         display: none;
-//         &.active {
-//           display: block;
-//         }
-//       }
-//       &.active {
+//     @include max(1080px) {
+//       #currency {
+//         flex-direction: column;
 //         p.btn {
-//           display: flex;
-
+//           display: none;
+//           &.active {
+//             display: block;
+//           }
+//         }
+//         &.active {
+//           p.btn {
+//             display: flex;
+//             &::before {
+//               content: "";
+//               width: 15px;
+//               height: 15px;
+//               position: absolute;
+//               right: 18px;
+//               top: 15px;
+//               border-top: 4px solid #fff;
+//               border-right: 4px solid #fff;
+//               transform: rotate(135deg);
+//             }
+//           }
 //         }
 //       }
 //     }
