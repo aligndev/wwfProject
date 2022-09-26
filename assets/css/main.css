@@ -805,13 +805,25 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   flex-direction: column;
   height: 60px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+  #donationForm .donationTab #currency.currency-dropdown {
+    display: flex;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
 }
 #donationForm .donationTab #currency.currency-dropdown p.btn {
   display: none;
   border: 2px solid #3e9ffd;
   border-bottom: 0;
   font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  #donationForm .donationTab #currency.currency-dropdown p.btn {
+    width: 100%;
+  }
 }
 #donationForm .donationTab #currency.currency-dropdown p.btn.active {
   display: block;

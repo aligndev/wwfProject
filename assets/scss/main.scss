@@ -785,12 +785,20 @@ main {
       flex-direction: column;
       height: 60px;
       overflow: hidden;
-      transition: all 0.5s ease;
+      transition: all 0.5s;
+      @include max (768px) {
+        display: flex;
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+      }
       p.btn {
         display: none;
         border: 2px solid $primaryColor;
         border-bottom: 0;
         font-size: 30px;
+        @include max(768px) {
+          width: 100%;
+        }
         &.active {
           display: block;
           order: 1;
