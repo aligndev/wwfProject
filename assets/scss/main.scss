@@ -527,7 +527,7 @@ main {
           border-right: 2px solid $primaryColor;
           margin: 5px 5px 5px 0;
         }
-        @include max(768px) { 
+        @include max(768px) {
           margin: 0;
           padding: 0;
           min-width: auto;
@@ -777,39 +777,58 @@ main {
   }
 }
 
-
-
 // Change to dropdown section
 
-
-// #donationForm {
-//   .donationTab {
-//     @include max(1080px) {
-//       #currency {
-//         flex-direction: column;
-//         p.btn {
-//           display: none;
-//           &.active {
-//             display: block;
-//           }
-//         }
-//         &.active {
-//           p.btn {
-//             display: flex;
-//             &::before {
-//               content: "";
-//               width: 15px;
-//               height: 15px;
-//               position: absolute;
-//               right: 18px;
-//               top: 15px;
-//               border-top: 4px solid #fff;
-//               border-right: 4px solid #fff;
-//               transform: rotate(135deg);
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+#donationForm {
+  .donationTab {
+    #currency.currency-dropdown {
+      flex-direction: column;
+      height: 60px;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      p.btn {
+        display: none;
+        border: 2px solid $primaryColor;
+        border-bottom: 0;
+        font-size: 30px;
+        &.active {
+          display: block;
+          order: 1;
+        }
+      }
+      &.active {
+        flex-direction: column-reverse;
+        border-bottom: 2px solid $primaryColor;
+        p.btn {
+          display: flex;
+        }
+      }
+      &::before {
+        content: "";
+        width: 20px;
+        height: 5px;
+        background-color: $wwfWhite;
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        z-index: 9;
+      }
+      &::after {
+        content: "";
+        width: 20px;
+        height: 5px;
+        background-color: $wwfWhite;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        transition: all 0.4s;
+        z-index: 9;
+        transform: rotate(90deg);
+      }
+      &.active::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

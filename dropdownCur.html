@@ -30,7 +30,6 @@
         <section class="wwf-section_info">
             <div class="container wwf-col-2">
                 <div class="wwf-main-content-wrapper">
- 
                     <div class="wwf-owl">
                         <h1>
                             Lorem ipsum dolor sit amet, consectetur elit adipiscing elit ut
@@ -116,6 +115,7 @@
                                 <span class="step"></span>
                                 <span class="step"></span>
                             </div>
+                            <!-- One "tab" for each step in the form: -->
                             <div class="tab donationTab wwf-owl">
                                 <div class="btn-group wwf-donateOption" data-toggle="buttons">
                                     <p class="btn btn-primary active" data-toggle="popover" data-original-title="" title="">
@@ -128,8 +128,8 @@
                                     </p>
                                 </div>
                                 <h4>Pick your currency:</h4>
-                                <div id="currency" class="btn-group" data-toggle="buttons">
-                                <!-- <div id="currency" class="btn-group currency-dropdown" data-toggle="buttons"> -->
+                                <!-- <div id="currency" class="btn-group" data-toggle="buttons"> -->
+                                <div id="currency" class="btn-group currency-dropdown" data-toggle="buttons">
                                     <p class="btn btn-primary active">
                                         <input type="radio" name="customfields.currency" value="USD" id="USD"
                                             checked="checked" />
@@ -203,13 +203,11 @@
                                         <input type="text" oninput="this.className = ''" id="phoneNumber" />
                                         <label>Phone *</label>
                                         <span id="wwf-phone-alert" class="wwf-alert"></span>
-                                        <!-- <span class="wwf-alert">Please enter this field</span> -->
                                     </p>
                                     <p class="empty">
                                         <input type="text" oninput="this.className = ''" id="email" />
                                         <label>Email *</label>
                                         <span id="wwf-email-alert" class="wwf-alert"></span>
-                                        <!-- <span class="wwf-alert">Please enter this field</span> -->
                                     </p>
                                 </div>
                                 <div class="informationTab__mid wwf-owl-s">
@@ -578,8 +576,12 @@
                                     condimentum morbi proin tortor.
                                 </p>
                             </div>
+    
                             <div class="wwf-nav-btn" style="overflow: auto">
                                 <div>
+                                    <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                                        Previous
+                                    </button> -->
                                     <button type="button" onclick="nextPrev(1)">
                                         <span id="nextBtn">next</span>
                                     </button>
@@ -588,10 +590,9 @@
                         </div>
                     </form>
                     <div class="nav">
-                        <a href="/dropdownCur.html">Dropdown currency option</a>
+                        <a href="/">Details option</a>
                     </div>
                 </div>
-                
 
             </div>
         </section>

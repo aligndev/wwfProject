@@ -284,14 +284,16 @@ $(function () {
 
 
 // Dropdown currency
-// let currency = document.querySelector("#currency");
-// if(currency) {
-//   currency.addEventListener("click", () => {
-//     if (currency.classList.contains("active")) {
-//       currency.classList.remove("active");
-//     } else{
-//       currency.classList.add("active");
-//     }
-//   });
-// }
+let currency = document.querySelector("#currency.currency-dropdown");
+if(currency) {
+  currency.addEventListener("click", () => {
+    if (currency.classList.contains("active")) {
+      currency.classList.remove("active");
+      currency.style.height = '60px';
+    } else{
+      currency.classList.add("active");
+      currency.style.height = currency.childElementCount * 60 + 'px';
+    }
+  });
+}
 

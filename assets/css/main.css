@@ -799,4 +799,54 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 #donationForm .thankyouTab p {
   font-family: open-sans, "Open Sans", sans-serif;
+}
+
+#donationForm .donationTab #currency.currency-dropdown {
+  flex-direction: column;
+  height: 60px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+#donationForm .donationTab #currency.currency-dropdown p.btn {
+  display: none;
+  border: 2px solid #3e9ffd;
+  border-bottom: 0;
+  font-size: 30px;
+}
+#donationForm .donationTab #currency.currency-dropdown p.btn.active {
+  display: block;
+  order: 1;
+}
+#donationForm .donationTab #currency.currency-dropdown.active {
+  flex-direction: column-reverse;
+  border-bottom: 2px solid #3e9ffd;
+}
+#donationForm .donationTab #currency.currency-dropdown.active p.btn {
+  display: flex;
+}
+#donationForm .donationTab #currency.currency-dropdown::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  z-index: 9;
+}
+#donationForm .donationTab #currency.currency-dropdown::after {
+  content: "";
+  width: 20px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  transition: all 0.4s;
+  z-index: 9;
+  transform: rotate(90deg);
+}
+#donationForm .donationTab #currency.currency-dropdown.active::after {
+  transform: rotate(0deg);
 }/*# sourceMappingURL=main.css.map */
