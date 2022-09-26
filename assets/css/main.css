@@ -510,6 +510,13 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-family: "WWFRegular", "WWF";
   font-size: 24px;
   font-weight: 100;
+  line-height: 1;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  #donationForm .donationTab .wwf-des-for-amount {
+    font-size: 20px;
+  }
 }
 #donationForm .donationTab #currency {
   display: flex;
@@ -621,6 +628,9 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .informationTab .informationTab__top input.invalid ~ span.wwf-alert {
   display: block;
 }
+#donationForm .informationTab .informationTab__top label {
+  font-weight: 700;
+}
 #donationForm .informationTab .informationTab__mid p {
   display: inline-flex;
   align-items: center;
@@ -628,6 +638,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+  font-weight: 700;
 }
 #donationForm .informationTab .informationTab__mid p label {
   width: 85%;
@@ -637,6 +648,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   width: 20px;
   margin-right: 10px;
   border: 1px solid #3e9ffd;
+  margin-top: 0;
 }
 #donationForm .informationTab .informationTab__mid .wwf-policy-agreement-nofication {
   color: #fff;
@@ -646,6 +658,29 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   display: none;
   flex-grow: 1;
   margin-top: 15px;
+}
+#donationForm .informationTab .informationTab__bottom .wwf-alert {
+  display: none;
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  font-family: open-sans, "Open Sans", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  #donationForm .informationTab .informationTab__bottom .wwf-alert {
+    font-size: 11px;
+    padding: 3px;
+  }
+}
+#donationForm .informationTab .informationTab__bottom input.invalid ~ span.wwf-alert {
+  display: block;
+}
+#donationForm .informationTab .informationTab__bottom label {
+  font-weight: 700;
 }
 #donationForm .informationTab input {
   font-family: open-sans, "Open Sans", sans-serif;
@@ -662,6 +697,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-size: 16px;
   color: #000;
   height: 50px;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   #donationForm .informationTab .form-control {

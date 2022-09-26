@@ -91,8 +91,12 @@ function validateForm() {
     }
     if (selectCountry.value == '') {
       valid = false;
-      console.log('empty');
-    } 
+      document.querySelector(".informationTab__bottom .wwf-alert").style.display =
+        "flex";
+    } else {
+      document.querySelector(".informationTab__bottom .wwf-alert").style.display =
+        "none";
+    }
     if (emailValidate() == false) {
       valid = false;
       document.getElementById("wwf-email-alert").innerHTML =
@@ -125,7 +129,7 @@ function validateForm() {
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
-  return valid; // return the valid status
+  return valid;
 }
 
 function fixStepIndicator(n) {

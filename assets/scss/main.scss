@@ -498,6 +498,11 @@ main {
       font-family: "WWFRegular", "WWF";
       font-size: 24px;
       font-weight: 100;
+      line-height: 1;
+      color: $wwfBlack;
+      @include max(768px) {
+        font-size: 20px;
+      }
     }
     #currency {
       display: flex;
@@ -589,6 +594,9 @@ main {
       input.invalid ~ span.wwf-alert {
         display: block;
       }
+      label {
+        font-weight: 700;
+      }
     }
     .informationTab__mid {
       p {
@@ -598,6 +606,7 @@ main {
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
+        font-weight: 700;
         label {
           width: 85%;
         }
@@ -606,6 +615,7 @@ main {
           width: 20px;
           margin-right: 10px;
           border: 1px solid $primaryColor;
+          margin-top: 0;
         }
       }
       .wwf-policy-agreement-nofication {
@@ -617,6 +627,29 @@ main {
         flex-grow: 1;
         margin-top: 15px;
         // margin-left: 20px;
+      }
+    }
+    .informationTab__bottom {
+      .wwf-alert {
+        display: none;
+        background-color: red;
+        color: #fff;
+        padding: 5px;
+        font-family: open-sans, "Open Sans", sans-serif;
+        font-size: 14px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        @include max(768px) {
+          font-size: 11px;
+          padding: 3px;
+        }
+      }
+      input.invalid ~ span.wwf-alert {
+        display: block;
+      }
+      label {
+        font-weight: 700;
       }
     }
     input {
@@ -634,6 +667,7 @@ main {
       font-size: 16px;
       color: $wwfBlack;
       height: 50px;
+      font-weight: 700;
       @include max(768px) {
         font-size: 14px;
       }
