@@ -836,29 +836,20 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .donationTab #currency.currency-dropdown.active p.btn {
   display: flex;
 }
-#donationForm .donationTab #currency.currency-dropdown::before {
-  content: "";
-  width: 20px;
-  height: 5px;
-  background-color: #fff;
-  display: block;
-  position: absolute;
-  right: 30px;
-  top: 25px;
-  z-index: 9;
-}
 #donationForm .donationTab #currency.currency-dropdown::after {
   content: "";
   width: 20px;
-  height: 5px;
-  background-color: #fff;
   position: absolute;
   right: 30px;
-  top: 25px;
-  transition: all 0.4s;
+  top: 20px;
+  transition: all 0.5s;
   z-index: 9;
-  transform: rotate(90deg);
+  transform: rotate(45deg);
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  height: 20px;
+  transform-origin: center;
 }
 #donationForm .donationTab #currency.currency-dropdown.active::after {
-  transform: rotate(0deg);
+  transform: rotate(225deg);
 }/*# sourceMappingURL=main.css.map */

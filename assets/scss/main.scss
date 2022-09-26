@@ -811,31 +811,35 @@ main {
           display: flex;
         }
       }
-      &::before {
-        content: "";
-        width: 20px;
-        height: 5px;
-        background-color: $wwfWhite;
-        display: block;
-        position: absolute;
-        right: 30px;
-        top: 25px;
-        z-index: 9;
-      }
+      // &::before {
+      //   content: "";
+      //   width: 20px;
+      //   height: 5px;
+      //   background-color: $wwfWhite;
+      //   display: block;
+      //   position: absolute;
+      //   right: 30px;
+      //   top: 25px;
+      //   z-index: 9;
+      // }
       &::after {
         content: "";
         width: 20px;
-        height: 5px;
-        background-color: $wwfWhite;
+        // height: 5px;
+        // background-color: $wwfWhite;
         position: absolute;
         right: 30px;
-        top: 25px;
-        transition: all 0.4s;
+        top: 20px;
+        transition: all 0.5s;
         z-index: 9;
-        transform: rotate(90deg);
+        transform: rotate(45deg);
+        border-right: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        height: 20px;
+        transform-origin: center;
       }
       &.active::after {
-        transform: rotate(0deg);
+        transform: rotate(225deg);
       }
     }
   }
