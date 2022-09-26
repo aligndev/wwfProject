@@ -197,9 +197,9 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   margin-top: 20px;
 }
 #donationForm h4 {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: open-sans, "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "WWFRegular", "WWF";
 }
 #donationForm label {
   margin-bottom: 0;
@@ -274,6 +274,10 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-size: 30px;
   font-weight: 600;
   outline: 0;
+  line-height: 20px;
+  color: #000;
+  height: 40px;
+  padding: 0;
 }
 @media screen and (max-width: 768px) {
   #donationForm .tab .btn-group .otherAmount input {
@@ -304,7 +308,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   display: block;
   position: absolute;
   top: 12px;
-  left: 12px;
+  left: 8px;
   padding: 8px 8px;
   font-family: "WWFRegular", "WWF", sans-serif;
   font-size: 24px;
@@ -503,8 +507,9 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   }
 }
 #donationForm .donationTab .wwf-des-for-amount {
-  font-family: open-sans, "Open Sans", sans-serif;
-  font-size: 16px;
+  font-family: "WWFRegular", "WWF";
+  font-size: 24px;
+  font-weight: 100;
 }
 #donationForm .donationTab #currency {
   display: flex;

@@ -67,7 +67,7 @@ function validateForm() {
     valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-  let selectCountry = document.getElementById("SelectCountry").value;
+  let selectCountry = document.getElementById("SelectCountry");
 
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
@@ -84,12 +84,17 @@ function validateForm() {
     }
   }
   if (currentTab == 1) {
-    if (selectCountry != "US" || selectCountry != "GB") {
+    if (selectCountry.value != "US" && selectCountry.value != "GB"){
       valid = true;
+    } else {
+      valid = false;
     }
+    if (selectCountry.value == '') {
+      valid = false;
+      console.log('empty');
+    } 
     if (emailValidate() == false) {
       valid = false;
-      //alert("please add email")
       document.getElementById("wwf-email-alert").innerHTML =
         "This email field is required ";
       document.getElementById("wwf-email-alert").style.display = "block";
@@ -103,7 +108,6 @@ function validateForm() {
         "This phone field is required ";
       document.getElementById("wwf-phone-alert").style.display = "block";
     } else {
-      //alert("please add phone number")
       document.getElementById("wwf-phone-alert").innerHTML = "";
       document.getElementById("wwf-phone-alert").style.display = "none";
     }
@@ -111,6 +115,9 @@ function validateForm() {
       valid = false;
       document.querySelector(".wwf-policy-agreement-nofication").style.display =
         "flex";
+    } else {
+      document.querySelector(".wwf-policy-agreement-nofication").style.display =
+        "none";
     }
   }
 
