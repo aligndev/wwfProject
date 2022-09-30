@@ -485,6 +485,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 }
 #donationForm .donationTab .wwf-donateOption {
   width: 100%;
+  display: inline-flex;
 }
 #donationForm .donationTab .wwf-donateOption p.btn {
   height: 90px;
@@ -686,6 +687,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   font-size: 16px;
   font-weight: 500;
   color: #000;
+  height: 50px;
 }
 #donationForm .informationTab .form-control {
   outline: none;
@@ -729,6 +731,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   padding: 0;
   background-color: #fff;
   border: 0;
+  position: relative;
 }
 #donationForm .paymentTab .card .card-header h3 .btn {
   padding-left: 0;
@@ -738,6 +741,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   background-color: #fff;
   outline: none;
   box-shadow: none;
+  border: none;
 }
 #donationForm .paymentTab .card .card-header h3 .btn::before {
   content: "";

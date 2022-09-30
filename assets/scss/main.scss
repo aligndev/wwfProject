@@ -478,6 +478,7 @@ main {
   .donationTab {
     .wwf-donateOption {
       width: 100%;
+      display: inline-flex;
       p.btn {
         height: 90px;
         width: 50%;
@@ -657,6 +658,7 @@ main {
       font-size: 16px;
       font-weight: 500;
       color: $wwfBlack;
+      height: 50px;
     }
     .form-control {
       outline: none;
@@ -696,6 +698,7 @@ main {
         padding: 0;
         background-color: $wwfWhite;
         border: 0;
+        position: relative;
         h3 {
           .btn {
             padding-left: 0;
@@ -705,6 +708,7 @@ main {
             background-color: $wwfWhite;
             outline: none;
             box-shadow: none;
+            border: none;
             &::before {
               content: "";
               width: 20px;
