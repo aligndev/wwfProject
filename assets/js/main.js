@@ -55,8 +55,81 @@ function emailValidate() {
 
 function validatePhoneNumber() {
   const phoneNumber = $("#phoneNumber").val();
-  let re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-  return re.test(phoneNumber);
+  const phonecheck = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  return phonecheck.test(phoneNumber);
+  // if(phoneNumber.value.match(phonecheck)) {
+  //   return true;
+  // }
+  // else {
+  //   alert("message");
+  //   return false;
+  // }
+  // const phoneNumber = $("#phoneNumber").val();
+  // let re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  // return re.test(phoneNumber);
+}
+
+function alertInformation() {
+  let firstName = document.querySelector(
+    'input[name="customfields.firstName"]',
+  ).value;
+  let lastName = document.querySelector(
+    'input[name="customfields.lastName"]',
+  ).value;
+  phoneNumber = document.querySelector(
+    'input[name="customfields.phoneNumber"]',
+  ).value;
+  email = document.querySelector('input[name="customfields.email"]').value;
+  let country = document.querySelector(
+    'select[name="customfields.country"]',
+  ).value;
+  address1 = document.querySelector(
+    'input[name="customfields.address1"]',
+  ).value;
+  address2 = document.querySelector(
+    'input[name="customfields.address2"]',
+  ).value;
+  city = document.querySelector('input[name="customfields.city"]').value;
+  state = document.querySelector('input[name="customfields.state"]').value;
+  zipcode = document.querySelector('input[name="customfields.zipcode"]').value;
+
+  let message;
+
+  if (country == "US" || country == "GB") {
+      message =
+      "Your name: " +
+      firstName +
+      lastName +
+      "\nYour phone number: " +
+      phoneNumber +
+      "\nYour email: " +
+      email +
+      "\nYour country: " +
+      country;
+      "\nYour address 1: " +
+      address1;
+      "\nYour address 2: " +
+      address2;
+      "\nYour city: " +
+      city;
+      "\nYour state: " +
+      state;
+      "\nYour zip code: " +
+      zipcode;
+  } else {
+    message =
+      "Your name: " +
+      firstName +
+      lastName +
+      "\nYour phone number: " +
+      phoneNumber +
+      "\nYour email: " +
+      email +
+      "\nYour country: " +
+      country;
+  }
+
+  return message;
 }
 
 function validateForm() {
@@ -84,18 +157,18 @@ function validateForm() {
     }
   }
   if (currentTab == 1) {
-    if (selectCountry.value != "US" && selectCountry.value != "GB"){
+    if (selectCountry.value != "US" && selectCountry.value != "GB") {
       valid = true;
-    } else {
-      valid = false;
     }
-    if (selectCountry.value == '') {
+    if (selectCountry.value == "") {
       valid = false;
-      document.querySelector(".informationTab__bottom .wwf-alert").style.display =
-        "flex";
+      document.querySelector(
+        ".informationTab__bottom .wwf-alert",
+      ).style.display = "flex";
     } else {
-      document.querySelector(".informationTab__bottom .wwf-alert").style.display =
-        "none";
+      document.querySelector(
+        ".informationTab__bottom .wwf-alert",
+      ).style.display = "none";
     }
     if (emailValidate() == false) {
       valid = false;
@@ -127,6 +200,10 @@ function validateForm() {
 
   //valid = true;
   if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  if (currentTab == 1 && valid) {
+    alert(alertInformation());
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
   return valid;
@@ -282,18 +359,16 @@ $(function () {
   });
 });
 
-
 // Dropdown currency
 let currency = document.querySelector("#currency.currency-dropdown");
-if(currency) {
+if (currency) {
   currency.addEventListener("click", () => {
     if (currency.classList.contains("active")) {
       currency.classList.remove("active");
-      currency.style.height = '60px';
-    } else{
+      currency.style.height = "60px";
+    } else {
       currency.classList.add("active");
-      currency.style.height = currency.childElementCount * 60 + 'px';
+      currency.style.height = currency.childElementCount * 60 + "px";
     }
   });
 }
-

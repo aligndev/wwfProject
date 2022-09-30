@@ -190,23 +190,23 @@
                             <div class="tab informationTab wwf-owl">
                                 <div class="informationTab__top">
                                     <p class="empty">
-                                        <input type="text" oninput="this.className = ''" />
+                                        <input type="text" name="customfields.firstName" oninput="this.className = ''" />
                                         <label>First name *</label>
                                         <span class="wwf-alert">Please enter this field</span>
                                     </p>
                                     <p class="empty">
-                                        <input type="text" oninput="this.className = ''" />
+                                        <input type="text" name="customfields.lastName"  oninput="this.className = ''" />
                                         <label>Last name *</label>
                                         <span class="wwf-alert">Please enter this field</span>
                                     </p>
                                     <p class="empty">
-                                        <input type="text" oninput="this.className = ''" id="phoneNumber" />
+                                        <input type="text" name="customfields.phoneNumber"  oninput="this.className = ''" id="phoneNumber" />
                                         <label>Phone *</label>
                                         <span id="wwf-phone-alert" class="wwf-alert"></span>
                                         <!-- <span class="wwf-alert">Please enter this field</span> -->
                                     </p>
                                     <p class="empty">
-                                        <input type="text" oninput="this.className = ''" id="email" />
+                                        <input type="text" name="customfields.email"  oninput="this.className = ''" id="email" />
                                         <label>Email *</label>
                                         <span id="wwf-email-alert" class="wwf-alert"></span>
                                         <!-- <span class="wwf-alert">Please enter this field</span> -->
@@ -482,30 +482,35 @@
     
                                     <div class="wwf-address-wrapper wwf-owl-s">
                                         <p class="wwf-address empty" id="InputAddress1">
-                                            <input type="text" name="customfields.address1" class="form-control required"
+                                            <input type="text" name="customfields.address1" oninput="this.className = ''"  class="form-control required"
                                                 value="" aria-required="true" />
                                             <label>Address 1 *</label>
+                                            <span class="wwf-alert">Please enter the address</span>
                                         </p>
                                         <p class="wwf-address empty" id="InputAddress2">
-                                            <input type="text" name="customfields.address2" class="form-control" value=""
+                                            <input type="text" name="customfields.address2" oninput="this.className = ''"  class="form-control" value=""
                                                 aria-required="true" />
                                             <label>Address 2</label>
+                                            <span class="wwf-alert">Please enter the address</span>
                                         </p>
                                         <div class="wwf-address-area-wrapper">
                                             <p class="wwf-address empty" id="InputCity">
-                                                <input type="text" name="customfields.city" class="form-control required"
+                                                <input type="text" name="customfields.city" oninput="this.className = ''"  class="form-control required"
                                                     value="" aria-required="true" />
                                                 <label>City</label>
+                                                <span class="wwf-alert">Please enter the city</span>
                                             </p>
                                             <p class="wwf-address empty" id="InputState">
-                                                <input type="text" name="customfields.state" class="form-control" value=""
+                                                <input type="text" name="customfields.state" oninput="this.className = ''"  class="form-control" value=""
                                                     aria-required="true" />
                                                 <label>State</label>
+                                                <span class="wwf-alert">Please enter the state</span>
                                             </p>
                                             <p class="wwf-address empty" id="InputPostalCode">
-                                                <input type="text" name="customfields.state" class="form-control" value=""
+                                                <input type="text" name="customfields.zipcode" oninput="this.className = ''"  class="form-control" value=""
                                                     aria-required="true" />
                                                 <label>Zip code</label>
+                                                <span class="wwf-alert">Please enter the zip code</span>
                                             </p>
                                         </div>
                                     </div>

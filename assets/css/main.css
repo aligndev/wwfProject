@@ -85,7 +85,7 @@ main .wwf-section__hero .container {
   }
 }
 main .wwf-section__hero h1 {
-  font-family: WWFRegular;
+  font-family: "WWFRegular", "WWF";
   font-size: 96px;
   color: #fff;
 }
@@ -164,11 +164,10 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 
 /* Style the form */
 #donationForm {
-  margin: 100px auto;
   width: 100%;
   max-width: 720px;
   min-width: 300px;
-  font-family: WWFRegular;
+  font-family: "WWFRegular", "WWF";
   /*Style content and layout */
   /* Style the input fields */
   /* Hide all steps by default: */
@@ -499,7 +498,7 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
 #donationForm .donationTab .wwf-donateOption p.btn label {
   font-size: 40px;
   font-weight: 700;
-  font-family: WWFRegular;
+  font-family: "WWFRegular", "WWF";
 }
 @media screen and (max-width: 768px) {
   #donationForm .donationTab .wwf-donateOption p.btn label {
@@ -665,14 +664,14 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   color: #fff;
   padding: 5px;
   font-family: open-sans, "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   position: absolute;
   top: -20px;
   left: 0;
 }
 @media screen and (max-width: 768px) {
   #donationForm .informationTab .informationTab__bottom .wwf-alert {
-    font-size: 11px;
+    font-size: 9px;
     padding: 3px;
   }
 }
@@ -841,15 +840,17 @@ main .wwf-footer .container .wwf-footer__leftContent .wwf-footer_inforwrapper {
   width: 20px;
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 10px;
   transition: all 0.5s;
   z-index: 9;
   transform: rotate(45deg);
   border-right: 4px solid #fff;
   border-bottom: 4px solid #fff;
   height: 20px;
-  transform-origin: center;
+  transform-origin: bottom;
 }
 #donationForm .donationTab #currency.currency-dropdown.active::after {
   transform: rotate(225deg);
+  right: 20px;
+  top: 5px;
 }/*# sourceMappingURL=main.css.map */
