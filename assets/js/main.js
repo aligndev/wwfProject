@@ -1,8 +1,7 @@
-let currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the current tab
+let currentTab = 0;
+showTab(currentTab);
 
 function showTab(n) {
-  // This function will display the specified tab of the form ...
   let x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
   if (n == x.length - 1) {
@@ -15,60 +14,35 @@ function showTab(n) {
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
-  // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n);
 }
 
 function nextPrev(n) {
-  // This function will figure out which tab to display
   let x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
   if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
   x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-  // if you have reached the end of the form... :
   if (currentTab >= x.length) {
-    //...the form gets submitted:
     document.getElementById("donationForm").submit();
     return false;
   }
-  // Otherwise, display the correct tab:
   showTab(currentTab);
 }
 
-function validateEmail(email) {
-  return email.match(
-    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-  );
-}
-
+//validating Email
 function emailValidate() {
   const email = $("#email").val();
-  if (validateEmail(email)) {
-    return true;
-  } else {
-    return false;
-  }
+  const emailCheck = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return emailCheck.test(email);
 }
-
+//validating phone number
 function validatePhoneNumber() {
   const phoneNumber = $("#phoneNumber").val();
   const phonecheck = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
   return phonecheck.test(phoneNumber);
-  // if(phoneNumber.value.match(phonecheck)) {
-  //   return true;
-  // }
-  // else {
-  //   alert("message");
-  //   return false;
-  // }
-  // const phoneNumber = $("#phoneNumber").val();
-  // let re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-  // return re.test(phoneNumber);
 }
 
+//alert information when submit
 function alertInformation() {
   let firstName = document.querySelector(
     'input[name="customfields.firstName"]',
@@ -82,7 +56,7 @@ function alertInformation() {
   email = document.querySelector('input[name="customfields.email"]').value;
   let country = document.querySelector(
     'select[name="customfields.country"]',
-  ).value;
+  );
   address1 = document.querySelector(
     'input[name="customfields.address1"]',
   ).value;
@@ -95,43 +69,44 @@ function alertInformation() {
 
   let message;
 
-  if (country == "US" || country == "GB") {
+  if (country.value == "US" || country.value == "GB") {
       message =
-      "Your name: " +
-      firstName +
+      'Your first name: ' +
+      firstName + '\nYour last name: ' +
       lastName +
-      "\nYour phone number: " +
+      '\nYour phone number: ' +
       phoneNumber +
-      "\nYour email: " +
+      '\nYour email: ' +
       email +
-      "\nYour country: " +
-      country;
-      "\nYour address 1: " +
-      address1;
-      "\nYour address 2: " +
-      address2;
-      "\nYour city: " +
-      city;
-      "\nYour state: " +
-      state;
-      "\nYour zip code: " +
+      '\nYour country: ' +
+      country.options[country.selectedIndex].text +
+      '\nYour address 1: ' +
+      address1 +
+      '\nYour address 2: ' +
+      address2 +
+      '\nYour city: ' +
+      city +
+      '\nYour state: ' +
+      state +
+      '\nYour zip code: ' +
       zipcode;
   } else {
     message =
-      "Your name: " +
-      firstName +
-      lastName +
-      "\nYour phone number: " +
-      phoneNumber +
-      "\nYour email: " +
-      email +
-      "\nYour country: " +
-      country;
+    'Your first name: ' +
+    firstName + '\nYour last name: ' +
+    lastName +
+    '\nYour phone number: ' +
+    phoneNumber +
+    '\nYour email: ' +
+    email +
+    '\nYour country: ' +
+    country.options[country.selectedIndex].text;
   }
 
   return message;
 }
 
+//Validate form
 function validateForm() {
   // This function deals with validation of the form fields
   let x,
@@ -206,9 +181,11 @@ function validateForm() {
     alert(alertInformation());
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
+  // alertInformation()
   return valid;
 }
 
+//Checking step
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
   var i,
